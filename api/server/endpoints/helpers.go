@@ -3,7 +3,7 @@ package endpoints
 import (
 	"encoding/json"
 	"github.com/Sirupsen/logrus"
-	"gitlab.com/epicglue/epicglue/app/helpers"
+	"github.com/yezooz/epicglue/common/helpers"
 	"net/http"
 	"runtime/debug"
 	"time"

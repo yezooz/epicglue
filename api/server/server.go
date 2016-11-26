@@ -1,12 +1,12 @@
-package api
+package server
 
 import (
 	"fmt"
 	"github.com/Sirupsen/logrus"
 	"github.com/julienschmidt/httprouter"
-	. "gitlab.com/epicglue/epicglue/app/api/api/endpoints"
-	"gitlab.com/epicglue/epicglue/app/config"
-	"gitlab.com/epicglue/epicglue/app/helpers"
+	"github.com/yezooz/epicglue/api/server/endpoints"
+	"github.com/yezooz/epicglue/common/config"
+	"github.com/yezooz/epicglue/common/helpers"
 	"net/http"
 	"time"
 )
@@ -30,15 +30,15 @@ func Run() {
 	//router.DELETE(getPath("items"), Log(Auth(DeleteItems)))
 	//router.POST(getPath("items/count"), Log(Auth(Limit(Counters))))
 
-	router.GET(getPath("channels"), Log(Auth(Limit(GetChannels))))
-	router.PUT(getPath("channel"), Log(Auth(Limit(AddChannel))))
-	router.POST(getPath("channel/:id"), Log(Auth(Limit(UpdateChannel))))
-	router.DELETE(getPath("channel/:id"), Log(Auth(Limit(DeleteChannel))))
+	router.GET(getPath("channels"), Log(Auth(Limit(endpoints.GetChannels))))
+	router.PUT(getPath("channel"), Log(Auth(Limit(endpoints.AddChannel))))
+	router.POST(getPath("channel/:id"), Log(Auth(Limit(endpoints.UpdateChannel))))
+	router.DELETE(getPath("channel/:id"), Log(Auth(Limit(endpoints.DeleteChannel))))
 
-	router.GET(getPath("pipes"), Log(Auth(Limit(GetPipe))))
-	router.PUT(getPath("pipe"), Log(Auth(Limit(AddPipe))))
-	router.POST(getPath("pipe/:id"), Log(Auth(Limit(UpdatePipe))))
-	router.DELETE(getPath("pipe/:id"), Log(Auth(Limit(DeletePipe))))
+	router.GET(getPath("pipes"), Log(Auth(Limit(endpoints.GetPipe))))
+	router.PUT(getPath("pipe"), Log(Auth(Limit(endpoints.AddPipe))))
+	router.POST(getPath("pipe/:id"), Log(Auth(Limit(endpoints.UpdatePipe))))
+	router.DELETE(getPath("pipe/:id"), Log(Auth(Limit(endpoints.DeletePipe))))
 
 	//router.POST(getPath("login"), Log(LoginByEmail))
 	//router.POST(getPath("register/email"), Log(RegisterByEmail))

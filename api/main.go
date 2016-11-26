@@ -1,9 +1,7 @@
 package main
 
-import (
-	"gitlab.com/epicglue/epicglue/app/api/api"
-)
+import "github.com/yezooz/epicglue/api/server"
 
 func main() {
-	api.Run()
+	server.Run()
 }
