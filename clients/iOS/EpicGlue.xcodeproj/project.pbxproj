@@ -1,0 +1,1981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		037C0A0B9DE43A1A83AE6471 /* libPods-EpicGlue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 042FD058230B4D81F052002B /* libPods-EpicGlue.a */; };
+		1C1674211B6A52E900C56305 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1674201B6A52E900C56305 /* UIKit.framework */; };
+		1C1674231B6A52F000C56305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1674221B6A52F000C56305 /* Foundation.framework */; };
+		1C5776B61BCF7DC7006A6D39 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5776B51BCF7DC7006A6D39 /* NJKWebViewProgress.m */; };
+		1C5776B91BCF7DD7006A6D39 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5776B81BCF7DD7006A6D39 /* NJKWebViewProgressView.m */; };
+		1CB75AC51B57B8E80064A651 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB75AC41B57B8E80064A651 /* CoreGraphics.framework */; };
+		1CB827FE1BC50F8E006FE157 /* OnboardingContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB827FB1BC50F8E006FE157 /* OnboardingContentViewController.m */; };
+		1CB827FF1BC50F8E006FE157 /* OnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB827FD1BC50F8E006FE157 /* OnboardingViewController.m */; };
+		1CBA217E1B678694004BB32B /* MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBA21781B678694004BB32B /* MHFacebookImageViewer.m */; };
+		1CBA217F1B678694004BB32B /* Done.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBA217A1B678694004BB32B /* Done.png */; };
+		1CBA21801B678694004BB32B /* Done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBA217B1B678694004BB32B /* Done@2x.png */; };
+		1CBA21811B678694004BB32B /* UIImageView+MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBA217D1B678694004BB32B /* UIImageView+MHFacebookImageViewer.m */; };
+		1CC000061B6A156000EADF09 /* UIImageView+XLNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC000011B6A156000EADF09 /* UIImageView+XLNetworking.m */; };
+		1CC000071B6A156000EADF09 /* UIImageView+XLProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC000031B6A156000EADF09 /* UIImageView+XLProgressIndicator.m */; };
+		1CC000081B6A156000EADF09 /* XLCircleProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC000051B6A156000EADF09 /* XLCircleProgressIndicator.m */; };
+		1CC0FFC21B6A077000EADF09 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC0FFC11B6A077000EADF09 /* UIImageView+UIActivityIndicatorForSDWebImage.m */; };
+		4C1355A11BC69C0500E334FF /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1355A01BC69C0500E334FF /* CoreText.framework */; };
+		4C1355A21BC69F4300E334FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB75A771B5799110064A651 /* Main.storyboard */; };
+		4C1355A41BC6A4A400E334FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1355A31BC6A4A400E334FF /* QuartzCore.framework */; };
+		62DD2002FEB27FAFFBBA23EE /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2238B554D98D646C6F1E /* Model.m */; };
+		62DD202311BC81DDC887644C /* UserClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD27DCE8CC5603C5E570EE /* UserClient.m */; };
+		62DD2025521F5B74660BA2AA /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2517DDEDC8A07D137CCD /* Helpers.m */; };
+		62DD2086B2775474FC00E705 /* ItemClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD28202FB966893B7D4EC0 /* ItemClient.m */; };
+		62DD2098646149DECD2871F2 /* ServiceUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD278E901BC6AB5014D446 /* ServiceUserInfo.m */; };
+		62DD20C3FC379F54BA71B065 /* RegisterByEmailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD21CA648A7E7A2E55F096 /* RegisterByEmailResponse.m */; };
+		62DD20DCF797A116B888B99E /* UpgradeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD22DD3F37ABC8C05E9F9D /* UpgradeHeader.m */; };
+		62DD20EE05B26C7A416BDB18 /* PlanListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2514DEF327B1F52A9264 /* PlanListCollectionViewController.m */; };
+		62DD2188C6388474A684FEFC /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD26B2F28425A2058FE005 /* RegisterViewController.m */; };
+		62DD219BDAABA048F3E54D37 /* HUDErrorNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD204C134A501F67F57E6D /* HUDErrorNotification.m */; };
+		62DD21A8764CA3CD7432B57E /* UserStat.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD20920EACDE9BE6D45F05 /* UserStat.m */; };
+		62DD21BDF2D593804B66945C /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2E7F5725B3046F59A184 /* Counter.m */; };
+		62DD21E70FEE4B633869A292 /* ProductHuntService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD23A33E929F5DF77AF583 /* ProductHuntService.m */; };
+		62DD22048F72F74BC42A89D1 /* UnsubscribeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD24BFE757442F31EFC8D8 /* UnsubscribeRequest.m */; };
+		62DD22097E7F5B2B4C29B51C /* PlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2A8D556971E98418CF59 /* PlanCollectionViewCell.xib */; };
+		62DD220AFE13935F3388E660 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2AB9CAB81FBA050D4DD5 /* Settings.m */; };
+		62DD2220D79A20814501AE16 /* Source.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD297C1EC0FBABA8B16566 /* Source.m */; };
+		62DD223AB38D6C3012361041 /* HUDNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD230624DF4F214DC771F0 /* HUDNotification.m */; };
+		62DD226D48392F5BFB7DCF44 /* Subscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD26D880C86704DECCF0FC /* Subscription.m */; };
+		62DD22C99185B74A65756579 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD246DC3C4C58B7D50AB34 /* Location.m */; };
+		62DD230652A3286BB1BD31F9 /* UIColor+EG.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD23B823BC9AA4646DF63D /* UIColor+EG.m */; };
+		62DD2326E54F5BCB843E8BCF /* UserSocialProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD29CCDE3EA6945144C90F /* UserSocialProfile.m */; };
+		62DD23579395745E0A3524B1 /* CommonHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD22203744DBAD1AB90A46 /* CommonHeader.m */; };
+		62DD2357B904077E6E050C89 /* CurrentSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD24EB3164E1312A6832E0 /* CurrentSession.m */; };
+		62DD23730C6068A7F714400C /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD28C94211406ECABBB381 /* Filter.m */; };
+		62DD23D29D2FAAB664C19840 /* UnsubscribeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD27FAECEFFA41992A655B /* UnsubscribeResponse.m */; };
+		62DD23DC75F6E29C2C0A36CA /* LoginByEmailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2CCDA4B99CC669019097 /* LoginByEmailRequest.m */; };
+		62DD2411E3FAA7DD0B97C4DD /* NSDateFormatter+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD26B48C74A0FDCFF6966A /* NSDateFormatter+Custom.m */; };
+		62DD24145E46D04FC197869B /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2DDDA6AFE204E6A6B5CC /* Service.m */; };
+		62DD246D11305C999DE34DDA /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD24AB7818259D64DA0048 /* PayViewController.m */; };
+		62DD24DC12B8B90989511D67 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD20E1AB696F5F02D1D594 /* SearchViewController.m */; };
+		62DD24FBB4241B569B901DDD /* InstagramService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2745712082630A9B19EC /* InstagramService.m */; };
+		62DD24FD8D85B2C1A6B72FC2 /* RegisterByDeviceIdResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD29156F76BEA2ECC154B2 /* RegisterByDeviceIdResponse.m */; };
+		62DD25005D21C53C91CE4A22 /* ServiceHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD232F3FB60BA219251256 /* ServiceHeader.m */; };
+		62DD250E56F93DF8108ADC44 /* EmptyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2EF01C484EC13CF27F8D /* EmptyViewCell.xib */; };
+		62DD251A54FB6B65BE34CF7B /* ServiceHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62DD25ED8567BBEE149C0684 /* ServiceHeader.xib */; };
+		62DD253FA7E4136598E855C8 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD272B2B277576D71EEE1B /* APIClient.m */; };
+		62DD256C77B7DFB8535F8705 /* SubscriptionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD22DCEF41671F8608F9F3 /* SubscriptionList.m */; };
+		62DD25A0BC254F9D7443CE1C /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2E2F4E683F61C3AC929F /* PopViewController.m */; };
+		62DD25A1B7AFE87A3C00DDB4 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD24D63BACD83FDA938491 /* NavigationViewController.m */; };
+		62DD25CFB6F8C5A054132211 /* SelectedService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2BD77A79E0E3CD26C35D /* SelectedService.m */; };
+		62DD25DEAA4832A0D6FA8E66 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2FD44DECDB5EFB57287B /* UserManager.m */; };
+		62DD2642E0DF12A0BC7689A6 /* SubscribeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD24A7789D0C5BA779411D /* SubscribeRequest.m */; };
+		62DD2700456C85A8F0C51500 /* TestUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD271FEAE2D3C669208866 /* TestUserManager.m */; };
+		62DD270B38643F1286D7E28E /* UIColor+Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2A15E0565CFB6FDC65D8 /* UIColor+Service.m */; };
+		62DD27309BB083B79B85BF53 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD27622F4AE4706334A776 /* FeedbackViewController.m */; };
+		62DD27AB6C045511EDEA45F2 /* LoginByEmailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD23E2388C2EBA358C9245 /* LoginByEmailResponse.m */; };
+		62DD286330DB12D73E8E1CD1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2DD2FE0B7701DC172170 /* CollectionViewCell.xib */; };
+		62DD288C83C662A3B0FA84C9 /* SubscriptionClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2204267DDA79A81414D2 /* SubscriptionClient.m */; };
+		62DD28920656F55FD6E69CEA /* RegisterByEmailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2486BE66B9DFA4F26961 /* RegisterByEmailRequest.m */; };
+		62DD28AF91A9626C385AB186 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2AEFFE455640C85ACD54 /* RightMenuViewController.m */; };
+		62DD28CF6D505220B9983ACC /* ItemColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2EF038149C2CD50B0979 /* ItemColors.m */; };
+		62DD28EDF609F933BAE0F3C5 /* UpgradeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62DD24763F633388AA692369 /* UpgradeHeader.xib */; };
+		62DD29315A056E6F3782AFA1 /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2748EF2893C12FF8981E /* Token.m */; };
+		62DD296DD3579BAC97EEA31A /* SubscribeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2937B492A45526908387 /* SubscribeResponse.m */; };
+		62DD298FD6C3FDA90BFE5F32 /* ServiceProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD26CFECE08315AAAAB41E /* ServiceProfile.m */; };
+		62DD29ACCE1AB109C7A872BB /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD27A822DA8B1804743383 /* Item.m */; };
+		62DD29CE7ED595FDA08B17DF /* ServiceCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD27D96C933CD95EA21EB6 /* ServiceCategory.m */; };
+		62DD29D20CDB8C130E831FB8 /* RegisterByDeviceIdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD25A6E54D79808A249A9B /* RegisterByDeviceIdRequest.m */; };
+		62DD29F40CD2DEE47337E2AC /* Payload.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2F6136F68FA51BA320F0 /* Payload.m */; };
+		62DD2A11063191347423D5D5 /* SubscriptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2CF95E3B1BC52D121A9C /* SubscriptionManager.m */; };
+		62DD2A267D36F26E30404520 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2B1CCD01F510752B3AE2 /* HomeViewController.m */; };
+		62DD2A94BD0F6618A87FC013 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD29E67ED13AFC41AE38A6 /* CollectionViewCell.m */; };
+		62DD2AAE5E512259E48AF4B2 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2D56299E8C72F9C600D8 /* Video.m */; };
+		62DD2B41675970152A4E56DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD23E86CA420DBA307D800 /* AppDelegate.m */; };
+		62DD2B45B28FF0699AC85257 /* RightMenuViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD28DBEF7F9E1EA5ACD593 /* RightMenuViewCell.m */; };
+		62DD2B56B6DE505F19A1D7A9 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2B33EE11F5AE03A67E2D /* Media.m */; };
+		62DD2B5AC3094368D452DF2B /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2CE7AFCC7FE443E8BCC3 /* NavigationBar.m */; };
+		62DD2B806F05BD32D748847A /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2B61DC8F621064FA9CE1 /* Plan.m */; };
+		62DD2BA8757EC14C1E92C9AE /* TwitterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD24E0DD06A70E2854A295 /* TwitterService.m */; };
+		62DD2BB65AEABD437CBFD6A6 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2FD914C39F25A7BD9E33 /* WebViewController.m */; };
+		62DD2BBDCE801A9E17DDFC4A /* JSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD272181E018C6A7D54F94 /* JSONResponse.m */; };
+		62DD2C241F0FFDF598997BFC /* PlanCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2C3FAF5D4C16EF6020B2 /* PlanCollectionViewCell.m */; };
+		62DD2C28DDA368DD4F4F12C7 /* RefreshProfileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD26357AFEA37288E206B0 /* RefreshProfileResponse.m */; };
+		62DD2C2FC51BDAE74218B2C7 /* RefreshProfileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD238B6FAF1BD6255117C5 /* RefreshProfileRequest.m */; };
+		62DD2C32CC9C454A24A07615 /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD290A944C7B336F5AC31C /* UIColor+RGB.m */; };
+		62DD2C8179C9D37FCBF7E622 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD29DCBE667A43F4B72A1C /* DataSource.m */; };
+		62DD2C8C48F4257D988CAB1D /* ItemHashList.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2D1CF97F3436CE71B297 /* ItemHashList.m */; };
+		62DD2C8E8E8450FDB53AD1D6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD23AF5B17B9204817E7D1 /* User.m */; };
+		62DD2CB6B8428426BEE12FBE /* APIError.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2195BD32BF58BD0412B8 /* APIError.m */; };
+		62DD2CCFE8C752ED43C34262 /* CommonHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2349E83D831354D89279 /* CommonHeader.xib */; };
+		62DD2D2B116C7FE4FA7C6134 /* EmptyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2FE633241452A1E03835 /* EmptyViewCell.m */; };
+		62DD2D2B341AC02A76C6D5AA /* LoginviaEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2CF32143B8637A3AF0D6 /* LoginviaEmailViewController.m */; };
+		62DD2D2F1E2B447213F7F31F /* ItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2415A10F94605EFB32E1 /* ItemList.m */; };
+		62DD2D3ACBEA7EE70C3090A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2C307B14E701E1AB90EB /* Localizable.strings */; };
+		62DD2D757F67514F29CB66B5 /* RedditService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD26D329336916CA5110EA /* RedditService.m */; };
+		62DD2D82BC803EBA2172C78C /* ArrowPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2CBCE026B5F836DF78F2 /* ArrowPopViewController.m */; };
+		62DD2D908A43B6241820B515 /* DateParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD22AA657E0D9E9933EB91 /* DateParser.m */; };
+		62DD2DB191745F346AC92CEF /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD25A36E92212AB275112B /* Image.m */; };
+		62DD2F2E7F1C0601756B4557 /* ItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2A20381BD92AB46B7D10 /* ItemManager.m */; };
+		62DD2F94EE165079E7EA909E /* ItemCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD21471551CA3A1B563D53 /* ItemCollectionViewController.m */; };
+		62DD2FA8EE9551281A37A1FB /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD26AAA9FFD41D48E7B6CD /* PlanViewController.m */; };
+		62DD2FFC63F1CB4E8237139D /* SyncItemClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2E8DBD7E2CB92FD18305 /* SyncItemClient.m */; };
+		9A11E9C30D37CC260481746E /* libPods-EpicGlueTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A310D7A4739346D4CE4F9BF /* libPods-EpicGlueTests.a */; };
+		EA320A571AA8CB7C008A3F02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA320A561AA8CB7C008A3F02 /* main.m */; };
+		EA320A5D1AA8CB7C008A3F02 /* EpicGlue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA320A5B1AA8CB7C008A3F02 /* EpicGlue.xcdatamodeld */; };
+		EA320A651AA8CB7C008A3F02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA320A641AA8CB7C008A3F02 /* Images.xcassets */; };
+		EA320A681AA8CB7C008A3F02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA320A661AA8CB7C008A3F02 /* LaunchScreen.xib */; };
+		EAD3ACE21B7EFB95007AF0AD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD3ACE11B7EFB95007AF0AD /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA320A6E1AA8CB7C008A3F02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA320A491AA8CB7C008A3F02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA320A501AA8CB7C008A3F02;
+			remoteInfo = EpicGlue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042FD058230B4D81F052002B /* libPods-EpicGlue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EpicGlue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FBD5F083206F1730D80011 /* Pods-EpicGlueTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpicGlueTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C1674201B6A52E900C56305 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1C1674221B6A52F000C56305 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1C5776B41BCF7DC7006A6D39 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		1C5776B51BCF7DC7006A6D39 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		1C5776B71BCF7DD7006A6D39 /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		1C5776B81BCF7DD7006A6D39 /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
+		1CB75A781B5799110064A651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CB75AC41B57B8E80064A651 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1CB827FA1BC50F8E006FE157 /* OnboardingContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingContentViewController.h; sourceTree = "<group>"; };
+		1CB827FB1BC50F8E006FE157 /* OnboardingContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingContentViewController.m; sourceTree = "<group>"; };
+		1CB827FC1BC50F8E006FE157 /* OnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingViewController.h; sourceTree = "<group>"; };
+		1CB827FD1BC50F8E006FE157 /* OnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingViewController.m; sourceTree = "<group>"; };
+		1CBA21771B678694004BB32B /* MHFacebookImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHFacebookImageViewer.h; sourceTree = "<group>"; };
+		1CBA21781B678694004BB32B /* MHFacebookImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHFacebookImageViewer.m; sourceTree = "<group>"; };
+		1CBA217A1B678694004BB32B /* Done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Done.png; sourceTree = "<group>"; };
+		1CBA217B1B678694004BB32B /* Done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done@2x.png"; sourceTree = "<group>"; };
+		1CBA217C1B678694004BB32B /* UIImageView+MHFacebookImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MHFacebookImageViewer.h"; sourceTree = "<group>"; };
+		1CBA217D1B678694004BB32B /* UIImageView+MHFacebookImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MHFacebookImageViewer.m"; sourceTree = "<group>"; };
+		1CC000001B6A156000EADF09 /* UIImageView+XLNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XLNetworking.h"; sourceTree = "<group>"; };
+		1CC000011B6A156000EADF09 /* UIImageView+XLNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XLNetworking.m"; sourceTree = "<group>"; };
+		1CC000021B6A156000EADF09 /* UIImageView+XLProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XLProgressIndicator.h"; sourceTree = "<group>"; };
+		1CC000031B6A156000EADF09 /* UIImageView+XLProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XLProgressIndicator.m"; sourceTree = "<group>"; };
+		1CC000041B6A156000EADF09 /* XLCircleProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCircleProgressIndicator.h; sourceTree = "<group>"; };
+		1CC000051B6A156000EADF09 /* XLCircleProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCircleProgressIndicator.m; sourceTree = "<group>"; };
+		1CC0FFC01B6A077000EADF09 /* UIImageView+UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+UIActivityIndicatorForSDWebImage.h"; path = "../EpicGlue/UIImageView+UIActivityIndicatorForSDWebImage.h"; sourceTree = "<group>"; };
+		1CC0FFC11B6A077000EADF09 /* UIImageView+UIActivityIndicatorForSDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+UIActivityIndicatorForSDWebImage.m"; path = "../EpicGlue/UIImageView+UIActivityIndicatorForSDWebImage.m"; sourceTree = "<group>"; };
+		3D9A4D39DF3FE6FAE6086206 /* Pods-EpicGlueTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpicGlueTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C1355A01BC69C0500E334FF /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4C1355A31BC6A4A400E334FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		62DD200ACED0AF07843CB466 /* RegisterByEmailResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterByEmailResponse.h; sourceTree = "<group>"; };
+		62DD204C134A501F67F57E6D /* HUDErrorNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDErrorNotification.m; sourceTree = "<group>"; };
+		62DD206244B2915C54014CB3 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		62DD206CAE26F407FF436FA1 /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		62DD2077BE0040CA1F3D07F3 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		62DD20920EACDE9BE6D45F05 /* UserStat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStat.m; sourceTree = "<group>"; };
+		62DD20D4BD4B2E6347C0EE5E /* ItemList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemList.h; sourceTree = "<group>"; };
+		62DD20D6AEF3A2556B45EFDF /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		62DD20D6EB645D13648D8928 /* SelectedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedService.h; sourceTree = "<group>"; };
+		62DD20E1AB696F5F02D1D594 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		62DD20FBAB6D6B1AD72503C4 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		62DD21035E6AEEC8C0C9C1C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EpicGlue/AppDelegate.h; sourceTree = "<group>"; };
+		62DD210CE9A27A21DEC8ADDC /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		62DD21471551CA3A1B563D53 /* ItemCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCollectionViewController.m; sourceTree = "<group>"; };
+		62DD21620A76536E1708B688 /* RegisterByDeviceIdResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterByDeviceIdResponse.h; sourceTree = "<group>"; };
+		62DD2165EFB7BD7F5F60FD87 /* Payload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Payload.h; sourceTree = "<group>"; };
+		62DD21809859356E37848576 /* EmptyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewCell.h; sourceTree = "<group>"; };
+		62DD2195BD32BF58BD0412B8 /* APIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIError.m; sourceTree = "<group>"; };
+		62DD21BCF7A4BEFDA3549EE5 /* LoginByEmailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginByEmailRequest.h; sourceTree = "<group>"; };
+		62DD21CA648A7E7A2E55F096 /* RegisterByEmailResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterByEmailResponse.m; sourceTree = "<group>"; };
+		62DD21DF99F24F22783CB544 /* SubscribeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeResponse.h; sourceTree = "<group>"; };
+		62DD2204267DDA79A81414D2 /* SubscriptionClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionClient.m; sourceTree = "<group>"; };
+		62DD22203744DBAD1AB90A46 /* CommonHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHeader.m; sourceTree = "<group>"; };
+		62DD2238B554D98D646C6F1E /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		62DD223EC7AEB09A9C48F418 /* UserClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserClient.h; sourceTree = "<group>"; };
+		62DD226B0A27204BF59F420A /* SubscriptionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionList.h; sourceTree = "<group>"; };
+		62DD227AC6DCDB9385DC4C66 /* PlanCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanCollectionViewCell.h; sourceTree = "<group>"; };
+		62DD228CF5E8E4A09E8ECEB8 /* ConnectableService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectableService.h; sourceTree = "<group>"; };
+		62DD22AA657E0D9E9933EB91 /* DateParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateParser.m; sourceTree = "<group>"; };
+		62DD22D323707FD27CC0612F /* LoginviaEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginviaEmailViewController.h; sourceTree = "<group>"; };
+		62DD22DCEF41671F8608F9F3 /* SubscriptionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionList.m; sourceTree = "<group>"; };
+		62DD22DD3F37ABC8C05E9F9D /* UpgradeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpgradeHeader.m; sourceTree = "<group>"; };
+		62DD22F7E37FE5C8B22A18B2 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		62DD230624DF4F214DC771F0 /* HUDNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDNotification.m; sourceTree = "<group>"; };
+		62DD231E5C3E8B20E1E043FF /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		62DD2327B04B6226277AE7AA /* UserStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStat.h; sourceTree = "<group>"; };
+		62DD232F3FB60BA219251256 /* ServiceHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceHeader.m; sourceTree = "<group>"; };
+		62DD2349E83D831354D89279 /* CommonHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonHeader.xib; sourceTree = "<group>"; };
+		62DD234F0F8154BF983FBD48 /* ServiceUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceUserInfo.h; sourceTree = "<group>"; };
+		62DD2358EA3D07B1E6A5E5D4 /* ArrowPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowPopViewController.h; sourceTree = "<group>"; };
+		62DD238B6FAF1BD6255117C5 /* RefreshProfileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshProfileRequest.m; sourceTree = "<group>"; };
+		62DD23A33E929F5DF77AF583 /* ProductHuntService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductHuntService.m; sourceTree = "<group>"; };
+		62DD23AF5B17B9204817E7D1 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		62DD23B823BC9AA4646DF63D /* UIColor+EG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+EG.m"; sourceTree = "<group>"; };
+		62DD23E2388C2EBA358C9245 /* LoginByEmailResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginByEmailResponse.m; sourceTree = "<group>"; };
+		62DD23E86CA420DBA307D800 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = EpicGlue/AppDelegate.m; sourceTree = "<group>"; };
+		62DD2415A10F94605EFB32E1 /* ItemList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemList.m; sourceTree = "<group>"; };
+		62DD2435DDB2884E3C7EAA54 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		62DD24557C5551BF249C527C /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanViewController.h; sourceTree = "<group>"; };
+		62DD2463EEF12DCFC80F04E5 /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		62DD246DC3C4C58B7D50AB34 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		62DD2471044E9DD14C49F8EF /* CurrentSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentSession.h; sourceTree = "<group>"; };
+		62DD24763F633388AA692369 /* UpgradeHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpgradeHeader.xib; sourceTree = "<group>"; };
+		62DD2486BE66B9DFA4F26961 /* RegisterByEmailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterByEmailRequest.m; sourceTree = "<group>"; };
+		62DD249C61E6D0CB755E3B3F /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		62DD24A7789D0C5BA779411D /* SubscribeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeRequest.m; sourceTree = "<group>"; };
+		62DD24AB7818259D64DA0048 /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		62DD24BFE757442F31EFC8D8 /* UnsubscribeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsubscribeRequest.m; sourceTree = "<group>"; };
+		62DD24D63BACD83FDA938491 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		62DD24D9EB7C5275E13DF460 /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
+		62DD24E08EC16E865317EFB5 /* ItemHashList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemHashList.h; sourceTree = "<group>"; };
+		62DD24E0DD06A70E2854A295 /* TwitterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterService.m; sourceTree = "<group>"; };
+		62DD24EB3164E1312A6832E0 /* CurrentSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentSession.m; sourceTree = "<group>"; };
+		62DD2506D2A2C670D472D1F2 /* ServiceProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceProfile.h; sourceTree = "<group>"; };
+		62DD2514DEF327B1F52A9264 /* PlanListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanListCollectionViewController.m; sourceTree = "<group>"; };
+		62DD2517DDEDC8A07D137CCD /* Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
+		62DD25618A5823B13F6A9B38 /* SubscriptionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionClient.h; sourceTree = "<group>"; };
+		62DD257A4B6D3374253B67FD /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		62DD2593438DD94889E7EB17 /* PlanListCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanListCollectionViewController.h; sourceTree = "<group>"; };
+		62DD25A36E92212AB275112B /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		62DD25A6E54D79808A249A9B /* RegisterByDeviceIdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterByDeviceIdRequest.m; sourceTree = "<group>"; };
+		62DD25ED8567BBEE149C0684 /* ServiceHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceHeader.xib; sourceTree = "<group>"; };
+		62DD2608450CA1EEF88B3162 /* ConnectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectResponse.h; sourceTree = "<group>"; };
+		62DD26357AFEA37288E206B0 /* RefreshProfileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshProfileResponse.m; sourceTree = "<group>"; };
+		62DD2660DBA5C908C72D117D /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plan.h; sourceTree = "<group>"; };
+		62DD26828B18EE0CADEF8780 /* UIColor+Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Service.h"; sourceTree = "<group>"; };
+		62DD26AAA9FFD41D48E7B6CD /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
+		62DD26B2F28425A2058FE005 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		62DD26B48C74A0FDCFF6966A /* NSDateFormatter+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Custom.m"; sourceTree = "<group>"; };
+		62DD26C465F322872ED161C9 /* SyncableItemList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncableItemList.h; sourceTree = "<group>"; };
+		62DD26CFECE08315AAAAB41E /* ServiceProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceProfile.m; sourceTree = "<group>"; };
+		62DD26D329336916CA5110EA /* RedditService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditService.m; sourceTree = "<group>"; };
+		62DD26D880C86704DECCF0FC /* Subscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subscription.m; sourceTree = "<group>"; };
+		62DD26E88A3872424C2DB311 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		62DD26EE60A46806C12CCCAA /* UserSocialProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSocialProfile.h; sourceTree = "<group>"; };
+		62DD271FEAE2D3C669208866 /* TestUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUserManager.m; sourceTree = "<group>"; };
+		62DD272181E018C6A7D54F94 /* JSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONResponse.m; sourceTree = "<group>"; };
+		62DD272B2B277576D71EEE1B /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		62DD2745712082630A9B19EC /* InstagramService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramService.m; sourceTree = "<group>"; };
+		62DD2748EF2893C12FF8981E /* Token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Token.m; sourceTree = "<group>"; };
+		62DD274EF13A62B46E69A04D /* ItemClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemClient.h; sourceTree = "<group>"; };
+		62DD27622F4AE4706334A776 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		62DD278E901BC6AB5014D446 /* ServiceUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceUserInfo.m; sourceTree = "<group>"; };
+		62DD27A822DA8B1804743383 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		62DD27C5D3151E347575ECF8 /* ProductHuntService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductHuntService.h; sourceTree = "<group>"; };
+		62DD27CB7AF54B2035053941 /* UIColor+EG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+EG.h"; sourceTree = "<group>"; };
+		62DD27D96C933CD95EA21EB6 /* ServiceCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceCategory.m; sourceTree = "<group>"; };
+		62DD27DCE8CC5603C5E570EE /* UserClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserClient.m; sourceTree = "<group>"; };
+		62DD27E5B7E1BAC56A0A5D1C /* RedditService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditService.h; sourceTree = "<group>"; };
+		62DD27F5B700AFBABF45FAF7 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		62DD27FAECEFFA41992A655B /* UnsubscribeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsubscribeResponse.m; sourceTree = "<group>"; };
+		62DD28202FB966893B7D4EC0 /* ItemClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemClient.m; sourceTree = "<group>"; };
+		62DD2853272802E8BF298189 /* SyncItemClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncItemClient.h; sourceTree = "<group>"; };
+		62DD2867B6A40C8188ED05F2 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		62DD287846CAC9897E687A65 /* SubscriptionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionManager.h; sourceTree = "<group>"; };
+		62DD2893DE50BC69B1DD1749 /* Source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Source.h; sourceTree = "<group>"; };
+		62DD289C384BC4B8039CD2F9 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		62DD289E33D22D0D5DE70E24 /* Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
+		62DD28C94211406ECABBB381 /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
+		62DD28D052F5E8D0BA66E8F2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		62DD28DBEF7F9E1EA5ACD593 /* RightMenuViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuViewCell.m; sourceTree = "<group>"; };
+		62DD28EDFA9D4A570299B193 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		62DD2908AA8F30211199A971 /* CommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		62DD290A944C7B336F5AC31C /* UIColor+RGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
+		62DD29156F76BEA2ECC154B2 /* RegisterByDeviceIdResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterByDeviceIdResponse.m; sourceTree = "<group>"; };
+		62DD2929C9BE5F4012CA9451 /* UnsubscribeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsubscribeRequest.h; sourceTree = "<group>"; };
+		62DD2937B492A45526908387 /* SubscribeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeResponse.m; sourceTree = "<group>"; };
+		62DD297C1EC0FBABA8B16566 /* Source.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Source.m; sourceTree = "<group>"; };
+		62DD297F1F3C7916FB589555 /* NSDateFormatter+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Custom.h"; sourceTree = "<group>"; };
+		62DD29CA48297426B1C696A0 /* Constants-Secret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Constants-Secret.h"; sourceTree = "<group>"; };
+		62DD29CCDE3EA6945144C90F /* UserSocialProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSocialProfile.m; sourceTree = "<group>"; };
+		62DD29DC44068FF830658DEA /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		62DD29DCBE667A43F4B72A1C /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		62DD29E67ED13AFC41AE38A6 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		62DD29E88A89F661E2CA50C5 /* ServiceHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceHeader.h; sourceTree = "<group>"; };
+		62DD29F86FEC9049DBE3D8B4 /* RightMenuViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMenuViewCell.h; sourceTree = "<group>"; };
+		62DD2A15E0565CFB6FDC65D8 /* UIColor+Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Service.m"; sourceTree = "<group>"; };
+		62DD2A20381BD92AB46B7D10 /* ItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemManager.m; sourceTree = "<group>"; };
+		62DD2A3E6B9C1894C8D3CB81 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		62DD2A54218E973764D3B891 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		62DD2A7B5F097DC86FA53441 /* APIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIError.h; sourceTree = "<group>"; };
+		62DD2A8D556971E98418CF59 /* PlanCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanCollectionViewCell.xib; sourceTree = "<group>"; };
+		62DD2AA53DC25592C0099EB7 /* SubscribeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeRequest.h; sourceTree = "<group>"; };
+		62DD2AB6E19C1B1A76D06BB4 /* LoginByEmailResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginByEmailResponse.h; sourceTree = "<group>"; };
+		62DD2AB82024D8767F528E19 /* Subscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subscription.h; sourceTree = "<group>"; };
+		62DD2AB9CAB81FBA050D4DD5 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		62DD2ADA8CD85B4C8FED56A5 /* TwitterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterService.h; sourceTree = "<group>"; };
+		62DD2AEFFE455640C85ACD54 /* RightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuViewController.m; sourceTree = "<group>"; };
+		62DD2B0C66BBCDBD6C290D9E /* UpgradeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeHeader.h; sourceTree = "<group>"; };
+		62DD2B1CCD01F510752B3AE2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		62DD2B2132C2B1EB921451AC /* UnsubscribeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsubscribeResponse.h; sourceTree = "<group>"; };
+		62DD2B2F088CFD959462C746 /* RegisterByEmailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterByEmailRequest.h; sourceTree = "<group>"; };
+		62DD2B33EE11F5AE03A67E2D /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
+		62DD2B61DC8F621064FA9CE1 /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plan.m; sourceTree = "<group>"; };
+		62DD2B82769AA65ABEAC4EAE /* ItemColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemColors.h; sourceTree = "<group>"; };
+		62DD2BC56CEC658369BC6924 /* RefreshProfileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshProfileResponse.h; sourceTree = "<group>"; };
+		62DD2BD77A79E0E3CD26C35D /* SelectedService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedService.m; sourceTree = "<group>"; };
+		62DD2BF4A83D5933927BEF7F /* DateParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateParser.h; sourceTree = "<group>"; };
+		62DD2BFCB2EA14458B8C9E38 /* JSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponse.h; sourceTree = "<group>"; };
+		62DD2C2F4E799CC9FEFC8E0A /* RefreshProfileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshProfileRequest.h; sourceTree = "<group>"; };
+		62DD2C307B14E701E1AB90EB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		62DD2C3FAF5D4C16EF6020B2 /* PlanCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanCollectionViewCell.m; sourceTree = "<group>"; };
+		62DD2C4EC48E04EC008C2626 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		62DD2C60689A36C59154430F /* UIColor+RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
+		62DD2C925FAD9781EF5C877C /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		62DD2CB76B679700C2FD63CD /* ItemCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCollectionViewController.h; sourceTree = "<group>"; };
+		62DD2CBCE026B5F836DF78F2 /* ArrowPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowPopViewController.m; sourceTree = "<group>"; };
+		62DD2CCC474C516D90EE660B /* RightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMenuViewController.h; sourceTree = "<group>"; };
+		62DD2CCDA4B99CC669019097 /* LoginByEmailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginByEmailRequest.m; sourceTree = "<group>"; };
+		62DD2CE7AFCC7FE443E8BCC3 /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
+		62DD2CF32143B8637A3AF0D6 /* LoginviaEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginviaEmailViewController.m; sourceTree = "<group>"; };
+		62DD2CF95E3B1BC52D121A9C /* SubscriptionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionManager.m; sourceTree = "<group>"; };
+		62DD2D084CBFBE69250D95BF /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		62DD2D1CF97F3436CE71B297 /* ItemHashList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemHashList.m; sourceTree = "<group>"; };
+		62DD2D56299E8C72F9C600D8 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		62DD2D66A89E4CE9783F6E2B /* HUDNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDNotification.h; sourceTree = "<group>"; };
+		62DD2D6E185B5FAEF35B6306 /* RegisterByDeviceIdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterByDeviceIdRequest.h; sourceTree = "<group>"; };
+		62DD2D7E57946BB1A186546F /* InstagramService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramService.h; sourceTree = "<group>"; };
+		62DD2DB12F6A595F39882EB3 /* HUDErrorNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDErrorNotification.h; sourceTree = "<group>"; };
+		62DD2DD2FE0B7701DC172170 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		62DD2DDDA6AFE204E6A6B5CC /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		62DD2E2F4E683F61C3AC929F /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		62DD2E7F5725B3046F59A184 /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
+		62DD2E8DBD7E2CB92FD18305 /* SyncItemClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncItemClient.m; sourceTree = "<group>"; };
+		62DD2EE3AFD34F9D64DA2AAC /* ItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemManager.h; sourceTree = "<group>"; };
+		62DD2EF01C484EC13CF27F8D /* EmptyViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyViewCell.xib; sourceTree = "<group>"; };
+		62DD2EF038149C2CD50B0979 /* ItemColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemColors.m; sourceTree = "<group>"; };
+		62DD2EFD1D5F31CC9F89B295 /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
+		62DD2F026334E60CD85EADAA /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		62DD2F6136F68FA51BA320F0 /* Payload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Payload.m; sourceTree = "<group>"; };
+		62DD2F6C86572E121D149FC2 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		62DD2F7E6EAEF52AFEB68CEC /* ServiceCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceCategory.h; sourceTree = "<group>"; };
+		62DD2FBA74912F7887BE35B6 /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
+		62DD2FD44DECDB5EFB57287B /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		62DD2FD914C39F25A7BD9E33 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		62DD2FE633241452A1E03835 /* EmptyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewCell.m; sourceTree = "<group>"; };
+		6A310D7A4739346D4CE4F9BF /* libPods-EpicGlueTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EpicGlueTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9EFAAFDCD150AD4F07040FF /* Pods-EpicGlue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpicGlue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue.debug.xcconfig"; sourceTree = "<group>"; };
+		CF4FD39A12E24FC76A65EA6F /* Pods-EpicGlue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpicGlue.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue.release.xcconfig"; sourceTree = "<group>"; };
+		EA170D3F1D68146E00BD5B54 /* EpicGlue-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EpicGlue-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		EA320A511AA8CB7C008A3F02 /* EpicGlue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpicGlue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA320A551AA8CB7C008A3F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA320A561AA8CB7C008A3F02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA320A5C1AA8CB7C008A3F02 /* EpicGlue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EpicGlue.xcdatamodel; sourceTree = "<group>"; };
+		EA320A641AA8CB7C008A3F02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA320A671AA8CB7C008A3F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EA320A6D1AA8CB7C008A3F02 /* EpicGlueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpicGlueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA320A721AA8CB7C008A3F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA320A7D1AA8D59F008A3F02 /* EpicGlue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EpicGlue.entitlements; sourceTree = "<group>"; };
+		EAD3ACE11B7EFB95007AF0AD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA320A4E1AA8CB7C008A3F02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1355A41BC6A4A400E334FF /* QuartzCore.framework in Frameworks */,
+				4C1355A11BC69C0500E334FF /* CoreText.framework in Frameworks */,
+				1C1674231B6A52F000C56305 /* Foundation.framework in Frameworks */,
+				1C1674211B6A52E900C56305 /* UIKit.framework in Frameworks */,
+				1CB75AC51B57B8E80064A651 /* CoreGraphics.framework in Frameworks */,
+				EAD3ACE21B7EFB95007AF0AD /* MapKit.framework in Frameworks */,
+				037C0A0B9DE43A1A83AE6471 /* libPods-EpicGlue.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA320A6A1AA8CB7C008A3F02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A11E9C30D37CC260481746E /* libPods-EpicGlueTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C5776BA1BCF7DDF006A6D39 /* NJKWebview */ = {
+			isa = PBXGroup;
+			children = (
+				1C5776B41BCF7DC7006A6D39 /* NJKWebViewProgress.h */,
+				1C5776B51BCF7DC7006A6D39 /* NJKWebViewProgress.m */,
+				1C5776B71BCF7DD7006A6D39 /* NJKWebViewProgressView.h */,
+				1C5776B81BCF7DD7006A6D39 /* NJKWebViewProgressView.m */,
+			);
+			name = NJKWebview;
+			path = EpicGlue;
+			sourceTree = "<group>";
+		};
+		1CB827F91BC50F8E006FE157 /* OnBoardSourceView */ = {
+			isa = PBXGroup;
+			children = (
+				1CB827FA1BC50F8E006FE157 /* OnboardingContentViewController.h */,
+				1CB827FB1BC50F8E006FE157 /* OnboardingContentViewController.m */,
+				1CB827FC1BC50F8E006FE157 /* OnboardingViewController.h */,
+				1CB827FD1BC50F8E006FE157 /* OnboardingViewController.m */,
+			);
+			path = OnBoardSourceView;
+			sourceTree = "<group>";
+		};
+		1CBA21761B678693004BB32B /* MHFBImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1CBA21771B678694004BB32B /* MHFacebookImageViewer.h */,
+				1CBA21781B678694004BB32B /* MHFacebookImageViewer.m */,
+				1CBA21791B678694004BB32B /* Resources */,
+				1CBA217C1B678694004BB32B /* UIImageView+MHFacebookImageViewer.h */,
+				1CBA217D1B678694004BB32B /* UIImageView+MHFacebookImageViewer.m */,
+			);
+			path = MHFBImageViewController;
+			sourceTree = "<group>";
+		};
+		1CBA21791B678694004BB32B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CBA217A1B678694004BB32B /* Done.png */,
+				1CBA217B1B678694004BB32B /* Done@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1CC0889C1B58B0F1004EE41A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				62DD21035E6AEEC8C0C9C1C0 /* AppDelegate.h */,
+				62DD23E86CA420DBA307D800 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1CC0FFFF1B6A156000EADF09 /* XL */ = {
+			isa = PBXGroup;
+			children = (
+				1CC0FFC01B6A077000EADF09 /* UIImageView+UIActivityIndicatorForSDWebImage.h */,
+				1CC0FFC11B6A077000EADF09 /* UIImageView+UIActivityIndicatorForSDWebImage.m */,
+				1CC000001B6A156000EADF09 /* UIImageView+XLNetworking.h */,
+				1CC000011B6A156000EADF09 /* UIImageView+XLNetworking.m */,
+				1CC000021B6A156000EADF09 /* UIImageView+XLProgressIndicator.h */,
+				1CC000031B6A156000EADF09 /* UIImageView+XLProgressIndicator.m */,
+				1CC000041B6A156000EADF09 /* XLCircleProgressIndicator.h */,
+				1CC000051B6A156000EADF09 /* XLCircleProgressIndicator.m */,
+			);
+			path = XL;
+			sourceTree = "<group>";
+		};
+		62DD203CDD33AD483EE8A1A3 /* Unsubscribe */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2929C9BE5F4012CA9451 /* UnsubscribeRequest.h */,
+				62DD27FAECEFFA41992A655B /* UnsubscribeResponse.m */,
+				62DD24BFE757442F31EFC8D8 /* UnsubscribeRequest.m */,
+				62DD2B2132C2B1EB921451AC /* UnsubscribeResponse.h */,
+			);
+			path = Unsubscribe;
+			sourceTree = "<group>";
+		};
+		62DD2255F77E396725907C1C /* RightMenu */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2908AA8F30211199A971 /* CommonHeader.h */,
+				62DD22203744DBAD1AB90A46 /* CommonHeader.m */,
+				62DD2349E83D831354D89279 /* CommonHeader.xib */,
+				62DD29F86FEC9049DBE3D8B4 /* RightMenuViewCell.h */,
+				62DD28DBEF7F9E1EA5ACD593 /* RightMenuViewCell.m */,
+				62DD29E88A89F661E2CA50C5 /* ServiceHeader.h */,
+				62DD232F3FB60BA219251256 /* ServiceHeader.m */,
+				62DD25ED8567BBEE149C0684 /* ServiceHeader.xib */,
+				62DD2B0C66BBCDBD6C290D9E /* UpgradeHeader.h */,
+				62DD22DD3F37ABC8C05E9F9D /* UpgradeHeader.m */,
+				62DD24763F633388AA692369 /* UpgradeHeader.xib */,
+			);
+			path = RightMenu;
+			sourceTree = "<group>";
+		};
+		62DD22C135F11ED927DF7C19 /* RegisterByEmail */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2B2F088CFD959462C746 /* RegisterByEmailRequest.h */,
+				62DD200ACED0AF07843CB466 /* RegisterByEmailResponse.h */,
+				62DD21CA648A7E7A2E55F096 /* RegisterByEmailResponse.m */,
+				62DD2486BE66B9DFA4F26961 /* RegisterByEmailRequest.m */,
+			);
+			path = RegisterByEmail;
+			sourceTree = "<group>";
+		};
+		62DD2468A49B64B51764AB46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2A5993B76D6B83BDE9FC /* Services */,
+				62DD2DDDA6AFE204E6A6B5CC /* Service.m */,
+				62DD2F7E6EAEF52AFEB68CEC /* ServiceCategory.h */,
+				62DD2D56299E8C72F9C600D8 /* Video.m */,
+				62DD289E33D22D0D5DE70E24 /* Token.h */,
+				62DD29DC44068FF830658DEA /* Model.h */,
+				62DD29CCDE3EA6945144C90F /* UserSocialProfile.m */,
+				62DD2C925FAD9781EF5C877C /* Image.h */,
+				62DD26CFECE08315AAAAB41E /* ServiceProfile.m */,
+				62DD297C1EC0FBABA8B16566 /* Source.m */,
+				62DD27A822DA8B1804743383 /* Item.m */,
+				62DD2077BE0040CA1F3D07F3 /* Item.h */,
+				62DD23AF5B17B9204817E7D1 /* User.m */,
+				62DD2506D2A2C670D472D1F2 /* ServiceProfile.h */,
+				62DD26EE60A46806C12CCCAA /* UserSocialProfile.h */,
+				62DD2D084CBFBE69250D95BF /* Service.h */,
+				62DD27D96C933CD95EA21EB6 /* ServiceCategory.m */,
+				62DD2AB82024D8767F528E19 /* Subscription.h */,
+				62DD2238B554D98D646C6F1E /* Model.m */,
+				62DD2B33EE11F5AE03A67E2D /* Media.m */,
+				62DD2B61DC8F621064FA9CE1 /* Plan.m */,
+				62DD20920EACDE9BE6D45F05 /* UserStat.m */,
+				62DD206244B2915C54014CB3 /* Media.h */,
+				62DD27F5B700AFBABF45FAF7 /* Video.h */,
+				62DD25A36E92212AB275112B /* Image.m */,
+				62DD26D880C86704DECCF0FC /* Subscription.m */,
+				62DD2660DBA5C908C72D117D /* Plan.h */,
+				62DD2A3E6B9C1894C8D3CB81 /* Location.h */,
+				62DD2893DE50BC69B1DD1749 /* Source.h */,
+				62DD2327B04B6226277AE7AA /* UserStat.h */,
+				62DD2748EF2893C12FF8981E /* Token.m */,
+				62DD20D6AEF3A2556B45EFDF /* User.h */,
+				62DD246DC3C4C58B7D50AB34 /* Location.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62DD247262C15C27EEFCB2D0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				62DD297F1F3C7916FB589555 /* NSDateFormatter+Custom.h */,
+				62DD26B48C74A0FDCFF6966A /* NSDateFormatter+Custom.m */,
+				62DD27CB7AF54B2035053941 /* UIColor+EG.h */,
+				62DD23B823BC9AA4646DF63D /* UIColor+EG.m */,
+				62DD2C60689A36C59154430F /* UIColor+RGB.h */,
+				62DD290A944C7B336F5AC31C /* UIColor+RGB.m */,
+				62DD26828B18EE0CADEF8780 /* UIColor+Service.h */,
+				62DD2A15E0565CFB6FDC65D8 /* UIColor+Service.m */,
+				62DD2A54218E973764D3B891 /* Constants.h */,
+				62DD2517DDEDC8A07D137CCD /* Helpers.m */,
+				62DD28EDFA9D4A570299B193 /* Settings.h */,
+				62DD29CA48297426B1C696A0 /* Constants-Secret.h */,
+				62DD2BF4A83D5933927BEF7F /* DateParser.h */,
+				62DD22AA657E0D9E9933EB91 /* DateParser.m */,
+				62DD2B82769AA65ABEAC4EAE /* ItemColors.h */,
+				62DD2EF038149C2CD50B0979 /* ItemColors.m */,
+				62DD2AB9CAB81FBA050D4DD5 /* Settings.m */,
+				62DD2BD77A79E0E3CD26C35D /* SelectedService.m */,
+				62DD20D6EB645D13648D8928 /* SelectedService.h */,
+				62DD2463EEF12DCFC80F04E5 /* Helpers.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		62DD24E291F17AB358F7E47F /* LoginByEmail */ = {
+			isa = PBXGroup;
+			children = (
+				62DD21BCF7A4BEFDA3549EE5 /* LoginByEmailRequest.h */,
+				62DD23E2388C2EBA358C9245 /* LoginByEmailResponse.m */,
+				62DD2CCDA4B99CC669019097 /* LoginByEmailRequest.m */,
+				62DD2AB6E19C1B1A76D06BB4 /* LoginByEmailResponse.h */,
+			);
+			path = LoginByEmail;
+			sourceTree = "<group>";
+		};
+		62DD2614BDB204302B31055C /* RegisterByDeviceId */ = {
+			isa = PBXGroup;
+			children = (
+				62DD29156F76BEA2ECC154B2 /* RegisterByDeviceIdResponse.m */,
+				62DD2D6E185B5FAEF35B6306 /* RegisterByDeviceIdRequest.h */,
+				62DD25A6E54D79808A249A9B /* RegisterByDeviceIdRequest.m */,
+				62DD21620A76536E1708B688 /* RegisterByDeviceIdResponse.h */,
+			);
+			path = RegisterByDeviceId;
+			sourceTree = "<group>";
+		};
+		62DD266E29F88E30DD2AD427 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2255F77E396725907C1C /* RightMenu */,
+				62DD2FE633241452A1E03835 /* EmptyViewCell.m */,
+				62DD2EF01C484EC13CF27F8D /* EmptyViewCell.xib */,
+				62DD231E5C3E8B20E1E043FF /* CollectionViewCell.h */,
+				62DD2C3FAF5D4C16EF6020B2 /* PlanCollectionViewCell.m */,
+				62DD2DD2FE0B7701DC172170 /* CollectionViewCell.xib */,
+				62DD21809859356E37848576 /* EmptyViewCell.h */,
+				62DD2A8D556971E98418CF59 /* PlanCollectionViewCell.xib */,
+				62DD29E67ED13AFC41AE38A6 /* CollectionViewCell.m */,
+				62DD227AC6DCDB9385DC4C66 /* PlanCollectionViewCell.h */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		62DD274743C15FAFD22AC1AB /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				62DD289C384BC4B8039CD2F9 /* APIClient.h */,
+				62DD272B2B277576D71EEE1B /* APIClient.m */,
+				62DD2A7B5F097DC86FA53441 /* APIError.h */,
+				62DD2195BD32BF58BD0412B8 /* APIError.m */,
+				62DD281F927645E67DB19612 /* Common */,
+				62DD274EF13A62B46E69A04D /* ItemClient.h */,
+				62DD28202FB966893B7D4EC0 /* ItemClient.m */,
+				62DD29ADAAC6A2F1FD1CCB24 /* Notification */,
+				62DD2F1B196FD4895E6D9439 /* SubscriptionClient */,
+				62DD2853272802E8BF298189 /* SyncItemClient.h */,
+				62DD2E8DBD7E2CB92FD18305 /* SyncItemClient.m */,
+				62DD27E49F9C20C534323AF0 /* UserClient */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		62DD27A946B2E3D937B49189 /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				62DD226B0A27204BF59F420A /* SubscriptionList.h */,
+				62DD2FBA74912F7887BE35B6 /* Counter.h */,
+				62DD2E7F5725B3046F59A184 /* Counter.m */,
+				62DD287846CAC9897E687A65 /* SubscriptionManager.h */,
+				62DD2CF95E3B1BC52D121A9C /* SubscriptionManager.m */,
+				62DD22DCEF41671F8608F9F3 /* SubscriptionList.m */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		62DD27C3878A32D088816030 /* RefreshProfile */ = {
+			isa = PBXGroup;
+			children = (
+				62DD238B6FAF1BD6255117C5 /* RefreshProfileRequest.m */,
+				62DD2BC56CEC658369BC6924 /* RefreshProfileResponse.h */,
+				62DD2C2F4E799CC9FEFC8E0A /* RefreshProfileRequest.h */,
+				62DD26357AFEA37288E206B0 /* RefreshProfileResponse.m */,
+			);
+			path = RefreshProfile;
+			sourceTree = "<group>";
+		};
+		62DD27E49F9C20C534323AF0 /* UserClient */ = {
+			isa = PBXGroup;
+			children = (
+				62DD24E291F17AB358F7E47F /* LoginByEmail */,
+				62DD27C3878A32D088816030 /* RefreshProfile */,
+				62DD2614BDB204302B31055C /* RegisterByDeviceId */,
+				62DD22C135F11ED927DF7C19 /* RegisterByEmail */,
+				62DD223EC7AEB09A9C48F418 /* UserClient.h */,
+				62DD27DCE8CC5603C5E570EE /* UserClient.m */,
+			);
+			path = UserClient;
+			sourceTree = "<group>";
+		};
+		62DD281F927645E67DB19612 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2F6136F68FA51BA320F0 /* Payload.m */,
+				62DD2BFCB2EA14458B8C9E38 /* JSONResponse.h */,
+				62DD210CE9A27A21DEC8ADDC /* Request.h */,
+				62DD2165EFB7BD7F5F60FD87 /* Payload.h */,
+				62DD272181E018C6A7D54F94 /* JSONResponse.m */,
+				62DD26C465F322872ED161C9 /* SyncableItemList.h */,
+				62DD2EFD1D5F31CC9F89B295 /* Response.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		62DD29ADAAC6A2F1FD1CCB24 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2DB12F6A595F39882EB3 /* HUDErrorNotification.h */,
+				62DD249C61E6D0CB755E3B3F /* Notification.h */,
+				62DD204C134A501F67F57E6D /* HUDErrorNotification.m */,
+				62DD2D66A89E4CE9783F6E2B /* HUDNotification.h */,
+				62DD230624DF4F214DC771F0 /* HUDNotification.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		62DD2A5993B76D6B83BDE9FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2ADA8CD85B4C8FED56A5 /* TwitterService.h */,
+				62DD2745712082630A9B19EC /* InstagramService.m */,
+				62DD278E901BC6AB5014D446 /* ServiceUserInfo.m */,
+				62DD24E0DD06A70E2854A295 /* TwitterService.m */,
+				62DD27C5D3151E347575ECF8 /* ProductHuntService.h */,
+				62DD23A33E929F5DF77AF583 /* ProductHuntService.m */,
+				62DD26D329336916CA5110EA /* RedditService.m */,
+				62DD27E5B7E1BAC56A0A5D1C /* RedditService.h */,
+				62DD2D7E57946BB1A186546F /* InstagramService.h */,
+				62DD228CF5E8E4A09E8ECEB8 /* ConnectableService.h */,
+				62DD2608450CA1EEF88B3162 /* ConnectResponse.h */,
+				62DD234F0F8154BF983FBD48 /* ServiceUserInfo.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		62DD2BE5C3ECF99509B3DAAD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2FE92DCF355126A37F87 /* Item */,
+				62DD27A946B2E3D937B49189 /* Subscription */,
+				62DD2F2960B3E9F59F26ADF6 /* User */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		62DD2C2DC898C1B0AAC9933C /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2F6C86572E121D149FC2 /* Filter.h */,
+				62DD26E88A3872424C2DB311 /* DataSource.h */,
+				62DD29DCBE667A43F4B72A1C /* DataSource.m */,
+				62DD28C94211406ECABBB381 /* Filter.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		62DD2DB8D2FBDBB0BB0C55D6 /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2AA53DC25592C0099EB7 /* SubscribeRequest.h */,
+				62DD21DF99F24F22783CB544 /* SubscribeResponse.h */,
+				62DD2937B492A45526908387 /* SubscribeResponse.m */,
+				62DD24A7789D0C5BA779411D /* SubscribeRequest.m */,
+			);
+			path = Subscribe;
+			sourceTree = "<group>";
+		};
+		62DD2F1B196FD4895E6D9439 /* SubscriptionClient */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2DB8D2FBDBB0BB0C55D6 /* Subscribe */,
+				62DD203CDD33AD483EE8A1A3 /* Unsubscribe */,
+				62DD2204267DDA79A81414D2 /* SubscriptionClient.m */,
+				62DD25618A5823B13F6A9B38 /* SubscriptionClient.h */,
+			);
+			path = SubscriptionClient;
+			sourceTree = "<group>";
+		};
+		62DD2F2960B3E9F59F26ADF6 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2FD44DECDB5EFB57287B /* UserManager.m */,
+				62DD24EB3164E1312A6832E0 /* CurrentSession.m */,
+				62DD2471044E9DD14C49F8EF /* CurrentSession.h */,
+				62DD2867B6A40C8188ED05F2 /* UserManager.h */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		62DD2F6FFF78A8A30AECBA3C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62DD266E29F88E30DD2AD427 /* Cells */,
+				62DD2358EA3D07B1E6A5E5D4 /* ArrowPopViewController.h */,
+				62DD2CBCE026B5F836DF78F2 /* ArrowPopViewController.m */,
+				62DD2F026334E60CD85EADAA /* FeedbackViewController.h */,
+				62DD27622F4AE4706334A776 /* FeedbackViewController.m */,
+				62DD28D052F5E8D0BA66E8F2 /* HomeViewController.h */,
+				62DD2B1CCD01F510752B3AE2 /* HomeViewController.m */,
+				62DD2CB76B679700C2FD63CD /* ItemCollectionViewController.h */,
+				62DD21471551CA3A1B563D53 /* ItemCollectionViewController.m */,
+				62DD22D323707FD27CC0612F /* LoginviaEmailViewController.h */,
+				62DD2CF32143B8637A3AF0D6 /* LoginviaEmailViewController.m */,
+				62DD24D9EB7C5275E13DF460 /* NavigationBar.h */,
+				62DD2CE7AFCC7FE443E8BCC3 /* NavigationBar.m */,
+				62DD2C4EC48E04EC008C2626 /* NavigationViewController.h */,
+				62DD24D63BACD83FDA938491 /* NavigationViewController.m */,
+				62DD206CAE26F407FF436FA1 /* PayViewController.h */,
+				62DD24AB7818259D64DA0048 /* PayViewController.m */,
+				62DD2593438DD94889E7EB17 /* PlanListCollectionViewController.h */,
+				62DD2514DEF327B1F52A9264 /* PlanListCollectionViewController.m */,
+				62DD24557C5551BF249C527C /* PlanViewController.h */,
+				62DD26AAA9FFD41D48E7B6CD /* PlanViewController.m */,
+				62DD2435DDB2884E3C7EAA54 /* PopViewController.h */,
+				62DD2E2F4E683F61C3AC929F /* PopViewController.m */,
+				62DD20FBAB6D6B1AD72503C4 /* RegisterViewController.h */,
+				62DD26B2F28425A2058FE005 /* RegisterViewController.m */,
+				62DD2CCC474C516D90EE660B /* RightMenuViewController.h */,
+				62DD2AEFFE455640C85ACD54 /* RightMenuViewController.m */,
+				62DD257A4B6D3374253B67FD /* SearchViewController.h */,
+				62DD20E1AB696F5F02D1D594 /* SearchViewController.m */,
+				62DD22F7E37FE5C8B22A18B2 /* WebViewController.h */,
+				62DD2FD914C39F25A7BD9E33 /* WebViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		62DD2FE92DCF355126A37F87 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2C2DC898C1B0AAC9933C /* DataSource */,
+				62DD2D1CF97F3436CE71B297 /* ItemHashList.m */,
+				62DD2415A10F94605EFB32E1 /* ItemList.m */,
+				62DD20D4BD4B2E6347C0EE5E /* ItemList.h */,
+				62DD2EE3AFD34F9D64DA2AAC /* ItemManager.h */,
+				62DD2A20381BD92AB46B7D10 /* ItemManager.m */,
+				62DD24E08EC16E865317EFB5 /* ItemHashList.h */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		DAC8DB1977C1EC094007143B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFAAFDCD150AD4F07040FF /* Pods-EpicGlue.debug.xcconfig */,
+				CF4FD39A12E24FC76A65EA6F /* Pods-EpicGlue.release.xcconfig */,
+				16FBD5F083206F1730D80011 /* Pods-EpicGlueTests.debug.xcconfig */,
+				3D9A4D39DF3FE6FAE6086206 /* Pods-EpicGlueTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DFC933D6E95B4C148B30D5A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C1355A31BC6A4A400E334FF /* QuartzCore.framework */,
+				4C1355A01BC69C0500E334FF /* CoreText.framework */,
+				EAD3ACE11B7EFB95007AF0AD /* MapKit.framework */,
+				1C1674221B6A52F000C56305 /* Foundation.framework */,
+				1C1674201B6A52E900C56305 /* UIKit.framework */,
+				1CB75AC41B57B8E80064A651 /* CoreGraphics.framework */,
+				042FD058230B4D81F052002B /* libPods-EpicGlue.a */,
+				6A310D7A4739346D4CE4F9BF /* libPods-EpicGlueTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA320A481AA8CB7C008A3F02 = {
+			isa = PBXGroup;
+			children = (
+				1CC0889C1B58B0F1004EE41A /* AppDelegate */,
+				EA320A531AA8CB7C008A3F02 /* EpicGlue */,
+				EA320A701AA8CB7C008A3F02 /* EpicGlueTests */,
+				DFC933D6E95B4C148B30D5A6 /* Frameworks */,
+				1CBA21761B678693004BB32B /* MHFBImageViewController */,
+				1C5776BA1BCF7DDF006A6D39 /* NJKWebview */,
+				1CB827F91BC50F8E006FE157 /* OnBoardSourceView */,
+				DAC8DB1977C1EC094007143B /* Pods */,
+				EA320A521AA8CB7C008A3F02 /* Products */,
+				1CC0FFFF1B6A156000EADF09 /* XL */,
+			);
+			sourceTree = "<group>";
+		};
+		EA320A521AA8CB7C008A3F02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA320A511AA8CB7C008A3F02 /* EpicGlue.app */,
+				EA320A6D1AA8CB7C008A3F02 /* EpicGlueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA320A531AA8CB7C008A3F02 /* EpicGlue */ = {
+			isa = PBXGroup;
+			children = (
+				62DD274743C15FAFD22AC1AB /* Client */,
+				62DD247262C15C27EEFCB2D0 /* Common */,
+				EA320A7D1AA8D59F008A3F02 /* EpicGlue.entitlements */,
+				EA320A5B1AA8CB7C008A3F02 /* EpicGlue.xcdatamodeld */,
+				EA320A641AA8CB7C008A3F02 /* Images.xcassets */,
+				EA320A661AA8CB7C008A3F02 /* LaunchScreen.xib */,
+				62DD2C307B14E701E1AB90EB /* Localizable.strings */,
+				1CB75A771B5799110064A651 /* Main.storyboard */,
+				62DD2BE5C3ECF99509B3DAAD /* Manager */,
+				62DD2468A49B64B51764AB46 /* Model */,
+				EA320A541AA8CB7C008A3F02 /* Supporting Files */,
+				62DD2F6FFF78A8A30AECBA3C /* ViewControllers */,
+			);
+			path = EpicGlue;
+			sourceTree = "<group>";
+		};
+		EA320A541AA8CB7C008A3F02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA320A551AA8CB7C008A3F02 /* Info.plist */,
+				EA320A561AA8CB7C008A3F02 /* main.m */,
+				EA170D3F1D68146E00BD5B54 /* EpicGlue-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA320A701AA8CB7C008A3F02 /* EpicGlueTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA320A711AA8CB7C008A3F02 /* Supporting Files */,
+				62DD271FEAE2D3C669208866 /* TestUserManager.m */,
+			);
+			path = EpicGlueTests;
+			sourceTree = "<group>";
+		};
+		EA320A711AA8CB7C008A3F02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA320A721AA8CB7C008A3F02 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA320A501AA8CB7C008A3F02 /* EpicGlue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA320A771AA8CB7C008A3F02 /* Build configuration list for PBXNativeTarget "EpicGlue" */;
+			buildPhases = (
+				A9D2AC8F0EFF708F238E66E0 /* [CP] Check Pods Manifest.lock */,
+				39782D22455534521919C528 /* uD83DuDCE6 Check Pods Manifest.lock */,
+				D46C5C0938507622112B2C6F /* uD83DuDCE6 Check Pods Manifest.lock */,
+				5EC4A4D188CAD8B450C7FB3D /* uD83DuDCE6 Check Pods Manifest.lock */,
+				AFF1FFF91D20AD6A50876CDE /* uD83DuDCE6 Check Pods Manifest.lock */,
+				19D4C36B64013F44A09DED5D /* uD83DuDCE6 Check Pods Manifest.lock */,
+				EA320A4D1AA8CB7C008A3F02 /* Sources */,
+				EA320A4E1AA8CB7C008A3F02 /* Frameworks */,
+				EA320A4F1AA8CB7C008A3F02 /* Resources */,
+				E89C0AA3F6DABB9E726A19D2 /* [CP] Embed Pods Frameworks */,
+				C78FF7926815846C9943D747 /* [CP] Copy Pods Resources */,
+				0799DA957D9D8E54C7C2D75C /* uD83DuDCE6 Embed Pods Frameworks */,
+				EC5B5D9B89BD5E7D125AD2F2 /* uD83DuDCE6 Copy Pods Resources */,
+				590AB6178A462E962186D3ED /* uD83DuDCE6 Embed Pods Frameworks */,
+				582A9B5D41F4C9CBB55222E3 /* uD83DuDCE6 Copy Pods Resources */,
+				63AF7A4D8471A7D7FFAA5E85 /* uD83DuDCE6 Embed Pods Frameworks */,
+				04EB62E73E45122CF227C662 /* uD83DuDCE6 Copy Pods Resources */,
+				D7A731F5ACF3D1DC61E842AC /* uD83DuDCE6 Embed Pods Frameworks */,
+				9B07AE664AA4F5B975F78680 /* uD83DuDCE6 Copy Pods Resources */,
+				FA53EDE2BE1B2AC47EA6D5F0 /* 📦 Embed Pods Frameworks */,
+				6A45FD9D87B6165A058F36EA /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EpicGlue;
+			productName = EpicGlue;
+			productReference = EA320A511AA8CB7C008A3F02 /* EpicGlue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA320A6C1AA8CB7C008A3F02 /* EpicGlueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA320A7A1AA8CB7C008A3F02 /* Build configuration list for PBXNativeTarget "EpicGlueTests" */;
+			buildPhases = (
+				E9E7E36E4C644C41BF00059C /* [CP] Check Pods Manifest.lock */,
+				7082137115A8DC089F8433C6 /* uD83DuDCE6 Check Pods Manifest.lock */,
+				B36F54A5CD236DB1C9975E88 /* uD83DuDCE6 Check Pods Manifest.lock */,
+				45DB1D122C66659ADEFF9D0D /* uD83DuDCE6 Check Pods Manifest.lock */,
+				5509177E6225DA9694D7ABB4 /* uD83DuDCE6 Check Pods Manifest.lock */,
+				5BDECF61DD95E179F9CD9A3E /* uD83DuDCE6 Check Pods Manifest.lock */,
+				EA320A691AA8CB7C008A3F02 /* Sources */,
+				EA320A6A1AA8CB7C008A3F02 /* Frameworks */,
+				EA320A6B1AA8CB7C008A3F02 /* Resources */,
+				6614327ED12D665136416482 /* [CP] Embed Pods Frameworks */,
+				703507A5D02882A570CE6CD9 /* [CP] Copy Pods Resources */,
+				2BC15121964A131A9CB3455E /* uD83DuDCE6 Embed Pods Frameworks */,
+				053E51335253BC2B18C1D728 /* uD83DuDCE6 Copy Pods Resources */,
+				5369F038B21CFE0974F4E15E /* uD83DuDCE6 Embed Pods Frameworks */,
+				6B8DBA21067782C9EEEE4FC2 /* uD83DuDCE6 Copy Pods Resources */,
+				57F72213899B405B86E94AF3 /* uD83DuDCE6 Embed Pods Frameworks */,
+				470591F915F8ED3EE9117A26 /* uD83DuDCE6 Copy Pods Resources */,
+				71C758A2269FFF7A3C723B95 /* uD83DuDCE6 Embed Pods Frameworks */,
+				AD2B9170DC82FCA0CFF08D75 /* uD83DuDCE6 Copy Pods Resources */,
+				9F2C810928D28E3F3D0B95A9 /* 📦 Embed Pods Frameworks */,
+				5D4CD88D4222C68957F0F198 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA320A6F1AA8CB7C008A3F02 /* PBXTargetDependency */,
+			);
+			name = EpicGlueTests;
+			productName = EpicGlueTests;
+			productReference = EA320A6D1AA8CB7C008A3F02 /* EpicGlueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA320A491AA8CB7C008A3F02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Only Epic Apps";
+				TargetAttributes = {
+					EA320A501AA8CB7C008A3F02 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = J7L8NRR4XP;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					EA320A6C1AA8CB7C008A3F02 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = J7L8NRR4XP;
+						TestTargetID = EA320A501AA8CB7C008A3F02;
+					};
+				};
+			};
+			buildConfigurationList = EA320A4C1AA8CB7C008A3F02 /* Build configuration list for PBXProject "EpicGlue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA320A481AA8CB7C008A3F02;
+			productRefGroup = EA320A521AA8CB7C008A3F02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA320A501AA8CB7C008A3F02 /* EpicGlue */,
+				EA320A6C1AA8CB7C008A3F02 /* EpicGlueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA320A4F1AA8CB7C008A3F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1355A21BC69F4300E334FF /* Main.storyboard in Resources */,
+				1CBA21801B678694004BB32B /* Done@2x.png in Resources */,
+				1CBA217F1B678694004BB32B /* Done.png in Resources */,
+				EA320A681AA8CB7C008A3F02 /* LaunchScreen.xib in Resources */,
+				EA320A651AA8CB7C008A3F02 /* Images.xcassets in Resources */,
+				62DD2D3ACBEA7EE70C3090A6 /* Localizable.strings in Resources */,
+				62DD250E56F93DF8108ADC44 /* EmptyViewCell.xib in Resources */,
+				62DD286330DB12D73E8E1CD1 /* CollectionViewCell.xib in Resources */,
+				62DD22097E7F5B2B4C29B51C /* PlanCollectionViewCell.xib in Resources */,
+				62DD251A54FB6B65BE34CF7B /* ServiceHeader.xib in Resources */,
+				62DD28EDF609F933BAE0F3C5 /* UpgradeHeader.xib in Resources */,
+				62DD2CCFE8C752ED43C34262 /* CommonHeader.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA320A6B1AA8CB7C008A3F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04EB62E73E45122CF227C662 /* uD83DuDCE6 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		053E51335253BC2B18C1D728 /* uD83DuDCE6 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0799DA957D9D8E54C7C2D75C /* uD83DuDCE6 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19D4C36B64013F44A09DED5D /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2BC15121964A131A9CB3455E /* uD83DuDCE6 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39782D22455534521919C528 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		45DB1D122C66659ADEFF9D0D /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		470591F915F8ED3EE9117A26 /* uD83DuDCE6 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5369F038B21CFE0974F4E15E /* uD83DuDCE6 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5509177E6225DA9694D7ABB4 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		57F72213899B405B86E94AF3 /* uD83DuDCE6 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		582A9B5D41F4C9CBB55222E3 /* uD83DuDCE6 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		590AB6178A462E962186D3ED /* uD83DuDCE6 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BDECF61DD95E179F9CD9A3E /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D4CD88D4222C68957F0F198 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EC4A4D188CAD8B450C7FB3D /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63AF7A4D8471A7D7FFAA5E85 /* uD83DuDCE6 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6614327ED12D665136416482 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A45FD9D87B6165A058F36EA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B8DBA21067782C9EEEE4FC2 /* uD83DuDCE6 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		703507A5D02882A570CE6CD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7082137115A8DC089F8433C6 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71C758A2269FFF7A3C723B95 /* uD83DuDCE6 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B07AE664AA4F5B975F78680 /* uD83DuDCE6 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2C810928D28E3F3D0B95A9 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D2AC8F0EFF708F238E66E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD2B9170DC82FCA0CFF08D75 /* uD83DuDCE6 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlueTests/Pods-EpicGlueTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF1FFF91D20AD6A50876CDE /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B36F54A5CD236DB1C9975E88 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C78FF7926815846C9943D747 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D46C5C0938507622112B2C6F /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7A731F5ACF3D1DC61E842AC /* uD83DuDCE6 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89C0AA3F6DABB9E726A19D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E7E36E4C644C41BF00059C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5B5D9B89BD5E7D125AD2F2 /* uD83DuDCE6 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA53EDE2BE1B2AC47EA6D5F0 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicGlue/Pods-EpicGlue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA320A4D1AA8CB7C008A3F02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB827FF1BC50F8E006FE157 /* OnboardingViewController.m in Sources */,
+				EA320A5D1AA8CB7C008A3F02 /* EpicGlue.xcdatamodeld in Sources */,
+				EA320A571AA8CB7C008A3F02 /* main.m in Sources */,
+				1CBA21811B678694004BB32B /* UIImageView+MHFacebookImageViewer.m in Sources */,
+				1CC000061B6A156000EADF09 /* UIImageView+XLNetworking.m in Sources */,
+				1CC0FFC21B6A077000EADF09 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */,
+				1CC000081B6A156000EADF09 /* XLCircleProgressIndicator.m in Sources */,
+				1C5776B91BCF7DD7006A6D39 /* NJKWebViewProgressView.m in Sources */,
+				1CBA217E1B678694004BB32B /* MHFacebookImageViewer.m in Sources */,
+				62DD2B41675970152A4E56DD /* AppDelegate.m in Sources */,
+				1CC000071B6A156000EADF09 /* UIImageView+XLProgressIndicator.m in Sources */,
+				1C5776B61BCF7DC7006A6D39 /* NJKWebViewProgress.m in Sources */,
+				1CB827FE1BC50F8E006FE157 /* OnboardingContentViewController.m in Sources */,
+				62DD253FA7E4136598E855C8 /* APIClient.m in Sources */,
+				62DD2CB6B8428426BEE12FBE /* APIError.m in Sources */,
+				62DD2086B2775474FC00E705 /* ItemClient.m in Sources */,
+				62DD2FFC63F1CB4E8237139D /* SyncItemClient.m in Sources */,
+				62DD29F40CD2DEE47337E2AC /* Payload.m in Sources */,
+				62DD2BBDCE801A9E17DDFC4A /* JSONResponse.m in Sources */,
+				62DD219BDAABA048F3E54D37 /* HUDErrorNotification.m in Sources */,
+				62DD223AB38D6C3012361041 /* HUDNotification.m in Sources */,
+				62DD288C83C662A3B0FA84C9 /* SubscriptionClient.m in Sources */,
+				62DD23D29D2FAAB664C19840 /* UnsubscribeResponse.m in Sources */,
+				62DD22048F72F74BC42A89D1 /* UnsubscribeRequest.m in Sources */,
+				62DD296DD3579BAC97EEA31A /* SubscribeResponse.m in Sources */,
+				62DD2642E0DF12A0BC7689A6 /* SubscribeRequest.m in Sources */,
+				62DD202311BC81DDC887644C /* UserClient.m in Sources */,
+				62DD20C3FC379F54BA71B065 /* RegisterByEmailResponse.m in Sources */,
+				62DD28920656F55FD6E69CEA /* RegisterByEmailRequest.m in Sources */,
+				62DD24FD8D85B2C1A6B72FC2 /* RegisterByDeviceIdResponse.m in Sources */,
+				62DD29D20CDB8C130E831FB8 /* RegisterByDeviceIdRequest.m in Sources */,
+				62DD2C2FC51BDAE74218B2C7 /* RefreshProfileRequest.m in Sources */,
+				62DD2C28DDA368DD4F4F12C7 /* RefreshProfileResponse.m in Sources */,
+				62DD27AB6C045511EDEA45F2 /* LoginByEmailResponse.m in Sources */,
+				62DD23DC75F6E29C2C0A36CA /* LoginByEmailRequest.m in Sources */,
+				62DD270B38643F1286D7E28E /* UIColor+Service.m in Sources */,
+				62DD2411E3FAA7DD0B97C4DD /* NSDateFormatter+Custom.m in Sources */,
+				62DD230652A3286BB1BD31F9 /* UIColor+EG.m in Sources */,
+				62DD2C32CC9C454A24A07615 /* UIColor+RGB.m in Sources */,
+				62DD2188C6388474A684FEFC /* RegisterViewController.m in Sources */,
+				62DD28AF91A9626C385AB186 /* RightMenuViewController.m in Sources */,
+				62DD25A0BC254F9D7443CE1C /* PopViewController.m in Sources */,
+				62DD2F94EE165079E7EA909E /* ItemCollectionViewController.m in Sources */,
+				62DD2D82BC803EBA2172C78C /* ArrowPopViewController.m in Sources */,
+				62DD246D11305C999DE34DDA /* PayViewController.m in Sources */,
+				62DD2BB65AEABD437CBFD6A6 /* WebViewController.m in Sources */,
+				62DD2A267D36F26E30404520 /* HomeViewController.m in Sources */,
+				62DD2D2B341AC02A76C6D5AA /* LoginviaEmailViewController.m in Sources */,
+				62DD24DC12B8B90989511D67 /* SearchViewController.m in Sources */,
+				62DD27309BB083B79B85BF53 /* FeedbackViewController.m in Sources */,
+				62DD20EE05B26C7A416BDB18 /* PlanListCollectionViewController.m in Sources */,
+				62DD25A1B7AFE87A3C00DDB4 /* NavigationViewController.m in Sources */,
+				62DD2B5AC3094368D452DF2B /* NavigationBar.m in Sources */,
+				62DD2FA8EE9551281A37A1FB /* PlanViewController.m in Sources */,
+				62DD2D2B116C7FE4FA7C6134 /* EmptyViewCell.m in Sources */,
+				62DD2C241F0FFDF598997BFC /* PlanCollectionViewCell.m in Sources */,
+				62DD2A94BD0F6618A87FC013 /* CollectionViewCell.m in Sources */,
+				62DD23579395745E0A3524B1 /* CommonHeader.m in Sources */,
+				62DD2B45B28FF0699AC85257 /* RightMenuViewCell.m in Sources */,
+				62DD25005D21C53C91CE4A22 /* ServiceHeader.m in Sources */,
+				62DD20DCF797A116B888B99E /* UpgradeHeader.m in Sources */,
+				62DD2C8C48F4257D988CAB1D /* ItemHashList.m in Sources */,
+				62DD2D2F1E2B447213F7F31F /* ItemList.m in Sources */,
+				62DD2F2E7F1C0601756B4557 /* ItemManager.m in Sources */,
+				62DD2C8179C9D37FCBF7E622 /* DataSource.m in Sources */,
+				62DD23730C6068A7F714400C /* Filter.m in Sources */,
+				62DD21BDF2D593804B66945C /* Counter.m in Sources */,
+				62DD2A11063191347423D5D5 /* SubscriptionManager.m in Sources */,
+				62DD256C77B7DFB8535F8705 /* SubscriptionList.m in Sources */,
+				62DD25DEAA4832A0D6FA8E66 /* UserManager.m in Sources */,
+				62DD2357B904077E6E050C89 /* CurrentSession.m in Sources */,
+				62DD2025521F5B74660BA2AA /* Helpers.m in Sources */,
+				62DD2D908A43B6241820B515 /* DateParser.m in Sources */,
+				62DD28CF6D505220B9983ACC /* ItemColors.m in Sources */,
+				62DD220AFE13935F3388E660 /* Settings.m in Sources */,
+				62DD25CFB6F8C5A054132211 /* SelectedService.m in Sources */,
+				62DD24FBB4241B569B901DDD /* InstagramService.m in Sources */,
+				62DD2098646149DECD2871F2 /* ServiceUserInfo.m in Sources */,
+				62DD2BA8757EC14C1E92C9AE /* TwitterService.m in Sources */,
+				62DD21E70FEE4B633869A292 /* ProductHuntService.m in Sources */,
+				62DD2D757F67514F29CB66B5 /* RedditService.m in Sources */,
+				62DD24145E46D04FC197869B /* Service.m in Sources */,
+				62DD2AAE5E512259E48AF4B2 /* Video.m in Sources */,
+				62DD2326E54F5BCB843E8BCF /* UserSocialProfile.m in Sources */,
+				62DD298FD6C3FDA90BFE5F32 /* ServiceProfile.m in Sources */,
+				62DD2220D79A20814501AE16 /* Source.m in Sources */,
+				62DD29ACCE1AB109C7A872BB /* Item.m in Sources */,
+				62DD2C8E8E8450FDB53AD1D6 /* User.m in Sources */,
+				62DD29CE7ED595FDA08B17DF /* ServiceCategory.m in Sources */,
+				62DD2002FEB27FAFFBBA23EE /* Model.m in Sources */,
+				62DD2B56B6DE505F19A1D7A9 /* Media.m in Sources */,
+				62DD2B806F05BD32D748847A /* Plan.m in Sources */,
+				62DD21A8764CA3CD7432B57E /* UserStat.m in Sources */,
+				62DD2DB191745F346AC92CEF /* Image.m in Sources */,
+				62DD226D48392F5BFB7DCF44 /* Subscription.m in Sources */,
+				62DD29315A056E6F3782AFA1 /* Token.m in Sources */,
+				62DD22C99185B74A65756579 /* Location.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA320A691AA8CB7C008A3F02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DD2700456C85A8F0C51500 /* TestUserManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA320A6F1AA8CB7C008A3F02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA320A501AA8CB7C008A3F02 /* EpicGlue */;
+			targetProxy = EA320A6E1AA8CB7C008A3F02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CB75A771B5799110064A651 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CB75A781B5799110064A651 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA320A661AA8CB7C008A3F02 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA320A671AA8CB7C008A3F02 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA320A751AA8CB7C008A3F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Iftekhar Qurashi (RFN29V7Q6Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Iftekhar Qurashi (RFN29V7Q6Y)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "dc74002c-9557-4388-b498-528bc1b8a3d2";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA320A761AA8CB7C008A3F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Iftekhar Qurashi (RFN29V7Q6Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Iftekhar Qurashi (RFN29V7Q6Y)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "dc74002c-9557-4388-b498-528bc1b8a3d2";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA320A781AA8CB7C008A3F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EFAAFDCD150AD4F07040FF /* Pods-EpicGlue.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EpicGlue/EpicGlue.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)-Prefix.pch";
+				INFOPLIST_FILE = EpicGlue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = ObjC;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onlyepicapps.epicglue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		EA320A791AA8CB7C008A3F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF4FD39A12E24FC76A65EA6F /* Pods-EpicGlue.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EpicGlue/EpicGlue.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)-Prefix.pch";
+				INFOPLIST_FILE = EpicGlue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = ObjC;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onlyepicapps.epicglue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		EA320A7B1AA8CB7C008A3F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16FBD5F083206F1730D80011 /* Pods-EpicGlueTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EpicGlue.app/EpicGlue";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EpicGlueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infoenumapps.;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		EA320A7C1AA8CB7C008A3F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9A4D39DF3FE6FAE6086206 /* Pods-EpicGlueTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EpicGlue.app/Contents/MacOS/EpicGlue";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EpicGlueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infoenumapps.;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA320A4C1AA8CB7C008A3F02 /* Build configuration list for PBXProject "EpicGlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA320A751AA8CB7C008A3F02 /* Debug */,
+				EA320A761AA8CB7C008A3F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA320A771AA8CB7C008A3F02 /* Build configuration list for PBXNativeTarget "EpicGlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA320A781AA8CB7C008A3F02 /* Debug */,
+				EA320A791AA8CB7C008A3F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA320A7A1AA8CB7C008A3F02 /* Build configuration list for PBXNativeTarget "EpicGlueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA320A7B1AA8CB7C008A3F02 /* Debug */,
+				EA320A7C1AA8CB7C008A3F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA320A5B1AA8CB7C008A3F02 /* EpicGlue.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA320A5C1AA8CB7C008A3F02 /* EpicGlue.xcdatamodel */,
+			);
+			currentVersion = EA320A5C1AA8CB7C008A3F02 /* EpicGlue.xcdatamodel */;
+			path = EpicGlue.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA320A491AA8CB7C008A3F02 /* Project object */;
+}

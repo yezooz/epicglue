@@ -1,0 +1,40 @@
+/****************************************************************************/
+/* Localization file */
+
+
+"FirstSubscriptionEmptyItemViewTitle" = "HI, THERE!";
+"FirstSubscriptionEmptyItemViewDescription" = "SADLY,\nTHERE IS NOTHING TO SHOW\nUNTIL YOU ADD YOUR FIRST\nSUBSCRIPTION";
+"UnreadEmptyItemViewTitle" = "Waiting for new items to read";
+"UnreadEmptyItemViewDescription" = "WHILE WAITING, YOU CAN\nSUBSCRIBE TO MORE SOURCES";
+"GluedEmptyItemViewTitle" = "Nothing glued";
+"GluedEmptyItemViewDescription" = "WHILE WAITING, YOU CAN\nSUBSCRIBE TO MORE SOURCES";
+"EmptyItemViewTitle" = "Nothing to show";
+"EmptyItemViewDescription" = "WHILE WAITING, YOU CAN\nSUBSCRIBE TO MORE SOURCES";
+"Unglue" = "Unglue";
+"Open in Safari" = "Open in Safari";
+"Share" = "Share";
+"Glue" = "Glue";
+"Suggest changes" = "Suggest changes";
+"Business Proposal" = "Business Proposal";
+"Just say Hi!" = "Just say Hi!";
+"Confirmation" = "Confirmation";
+"Mark all as read" = "Mark all as read";
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Logout" = "Logout";
+"Are you Sure ?" = "Are you Sure ?";
+"UNGLUE" = "UNGLUE";
+"GLUE IT" = "GLUE IT";
+"FREE PLAN" = "FREE PLAN";
+"PRO PLAN 1" = "PRO PLAN";
+"UNLIMITED PLAN 1" = "UNLIMITED PLAN";
+"unlimited benefit 1" = "Unlimited data retention";
+"unlimited benefit 2" = "No limit of connected sources";
+"pro benefit 1" = "30-day data retention";
+"pro benefit 2" = "No limit of connected sources";
+"free benefit 1" = "24-hour data retention";
+"free benefit 2" = "Always Free!";
+"Subscribe" = "SUBSCRIBE";
+"Everything" = "EVERYTHING";
+"Manage" = "MANAGE";
+"Feedback" = "FEEDBACK";

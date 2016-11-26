@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="852-23-WkE" customClass="CommonHeader">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY1-Ce-1E7">
+                    <rect key="frame" x="23" y="11" width="202" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="202" id="phV-V4-qxv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0QC-gw-WO6">
+                    <rect key="frame" x="369" y="17" width="15" height="15"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="d81-cN-Db1"/>
+                        <constraint firstAttribute="height" constant="15" id="grB-cZ-miI"/>
+                        <constraint firstAttribute="width" constant="20" id="rca-ME-xaN"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="rca-ME-xaN"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="KY1-Ce-1E7" firstAttribute="leading" secondItem="852-23-WkE" secondAttribute="leading" constant="23" id="1Rj-gs-Bfn"/>
+                <constraint firstItem="0QC-gw-WO6" firstAttribute="top" secondItem="852-23-WkE" secondAttribute="top" constant="10" id="4dY-3d-N8n"/>
+                <constraint firstItem="KY1-Ce-1E7" firstAttribute="centerY" secondItem="852-23-WkE" secondAttribute="centerY" id="9xK-IX-ZFY"/>
+                <constraint firstAttribute="trailing" secondItem="0QC-gw-WO6" secondAttribute="trailing" constant="14" id="JIo-dc-TxD"/>
+                <constraint firstAttribute="trailing" secondItem="0QC-gw-WO6" secondAttribute="trailing" constant="16" id="iXk-td-So7"/>
+                <constraint firstItem="0QC-gw-WO6" firstAttribute="top" secondItem="852-23-WkE" secondAttribute="top" constant="17" id="jLe-8Q-Etl"/>
+                <constraint firstItem="KY1-Ce-1E7" firstAttribute="centerY" secondItem="0QC-gw-WO6" secondAttribute="centerY" id="lJJ-Ml-HuE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="lJJ-Ml-HuE"/>
+                    <exclude reference="4dY-3d-N8n"/>
+                    <exclude reference="JIo-dc-TxD"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="icon" destination="0QC-gw-WO6" id="EkD-Rt-d10"/>
+                <outlet property="labelName" destination="KY1-Ce-1E7" id="nbb-qO-rKU"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="186"/>
+        </view>
+    </objects>
+</document>

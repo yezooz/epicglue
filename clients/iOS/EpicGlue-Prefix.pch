@@ -1,0 +1,22 @@
+//
+//  EpicGlue.pch
+//  EpicGlue
+//
+//  Created by Marek Mikuliszyn on 20/08/16.
+//  Copyright © 2016 Only Epic Apps. All rights reserved.
+//
+
+#ifndef EpicGlue_pch
+#define EpicGlue_pch
+
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Constants.h"
+
+#endif /* EpicGlue_pch */

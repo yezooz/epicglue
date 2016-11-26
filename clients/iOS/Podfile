@@ -1,0 +1,23 @@
+platform :ios, '7.0'
+
+target 'EpicGlue' do
+  pod 'AFNetworking', '~> 2.5.4'
+  pod 'FHSTwitterEngine', '~> 2.0'
+  pod 'ECSlidingViewController', '~> 2.0.3'
+  pod 'MBProgressHUD', '~> 0.9'
+  pod 'SDWebImage', '~> 3.8.1'
+  pod 'BlocksKit', '~> 2.2.5'
+  pod 'DateTools'
+  pod 'NSDate+TimeAgo'
+  pod 'TTTAttributedLabel'
+  pod 'CocoaLumberjack', '~> 2.2.0'
+  pod 'WYPopoverController', :git => 'https://github.com/sammcewan/WYPopoverController.git'
+  pod 'RMStore', '~> 0.7'
+  pod 'UIImage-Color', '~> 1.1.1'
+  pod 'IAPHelper'
+  pod "ARAnalytics", :subspecs => ['GoogleAnalytics', 'Amplitude']
+end
+
+target 'EpicGlueTests' do
+  pod 'Kiwi'
+end

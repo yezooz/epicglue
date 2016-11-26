@@ -1,0 +1,25 @@
+package store_metric_postgres
+
+import (
+	"gitlab.com/epicglue/epicglue/app/helpers"
+	"gitlab.com/epicglue/epicglue/app/metric"
+)
+
+var log = helpers.GetLogger("process_metric")
+
+type PostgresMetricStore struct {
+	metric metric.Metric
+}
+
+func NewPostgresMetricStore() *PostgresMetricStore {
+	return &PostgresMetricStore{
+		metric: nil,
+	}
+}
+
+func NewTestPostgresMetricStore() *PostgresMetricStore {
+	// TODO: connect to test db, provision if needed
+	return &PostgresMetricStore{
+		metric: nil,
+	}
+}
