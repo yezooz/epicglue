@@ -14,7 +14,7 @@
 
 package main
 
-import "gitlab.com/epicglue/epicglue/clients/cli/cmd"
+import "github.com/yezooz/epicglue/clients/cli/cmd"
 
 func main() {
 	cmd.Execute()

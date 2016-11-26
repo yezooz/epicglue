@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/jinzhu/gorm"
-	"gitlab.com/epicglue/epicglue/app/connection/database/postgres"
+	"github.com/jinzhu/gorm/dialects/postgres"
 )
 
 func TestDBConnection(dbNameSuffix string) *gorm.DB {

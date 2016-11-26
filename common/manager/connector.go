@@ -2,7 +2,7 @@ package manager
 
 import (
 	"github.com/uber-go/zap"
-	"gitlab.com/epicglue/epicglue/app/config"
+	"github.com/yezooz/epicglue/common/config"
 	r "gopkg.in/dancannon/gorethink.v2"
 	"sync"
 )

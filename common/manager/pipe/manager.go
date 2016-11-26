@@ -2,8 +2,8 @@ package pipe
 
 import (
 	"errors"
-	"gitlab.com/epicglue/epicglue/app/manager"
-	"gitlab.com/epicglue/epicglue/app/model"
+	"github.com/yezooz/epicglue/common/manager"
+	"github.com/yezooz/epicglue/common/model"
 	r "gopkg.in/dancannon/gorethink.v2"
 )
 

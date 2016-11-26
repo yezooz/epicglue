@@ -1,8 +1,6 @@
 package manager
 
-import (
-	"gitlab.com/epicglue/epicglue/app/model"
-)
+import "github.com/yezooz/epicglue/common/model"
 
 type Channel interface {
 	Get(int64) (*model.Channel, error)

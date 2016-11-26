@@ -1,6 +1,6 @@
 package manager
 
-import "gitlab.com/epicglue/epicglue/app/model"
+import "github.com/yezooz/epicglue/common/model"
 
 type Service interface {
 	Connect(*model.Token) error
