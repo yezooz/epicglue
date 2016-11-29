@@ -1,7 +1,9 @@
 WORK IN PROGRESS
 =
 
-EpicGlue is your personal, independent platform for different kind of data.
+EpicGlue is your personal, independent platform for storing different kind of data.
+
+
 
 
 
