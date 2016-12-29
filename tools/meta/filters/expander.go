@@ -1,7 +1,7 @@
 package filters
 
 import (
-	"gitlab.com/epicglue/meta-cli/common/model"
+	"github.com/yezooz/meta-cli/common/model"
 	"log"
 	"net/http"
 	"net/url"

@@ -2,8 +2,8 @@ package kickstarter_test
 
 import (
 	"github.com/stretchr/testify/assert"
-	"gitlab.com/epicglue/kickstarter-cli/kickstarter"
-	"gitlab.com/epicglue/self-control"
+	"github.com/yezooz/kickstarter-cli/kickstarter"
+	"github.com/yezooz/self-control"
 	"io/ioutil"
 	"net/http"
 	"testing"

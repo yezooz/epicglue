@@ -2,8 +2,8 @@ package reddit_test
 
 import (
 	"github.com/stretchr/testify/assert"
-	"gitlab.com/epicglue/reddit-cli/reddit"
-	"gitlab.com/epicglue/self-control"
+	"github.com/yezooz/reddit-cli/reddit"
+	"github.com/yezooz/self-control"
 	"io/ioutil"
 	"net/http"
 	"testing"

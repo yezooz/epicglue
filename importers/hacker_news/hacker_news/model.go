@@ -3,10 +3,10 @@ package hacker_news
 import (
 	"fmt"
 	"github.com/spf13/cast"
+	"github.com/yezooz/epicglue/app/model"
+	"github.com/yezooz/epicglue/app/model/enum/service"
+	"github.com/yezooz/epicglue/importers/common/helpers"
 	"github.com/yezooz/null"
-	"gitlab.com/epicglue/epicglue/app/model"
-	"gitlab.com/epicglue/epicglue/app/model/enum/service"
-	"gitlab.com/epicglue/epicglue/importers/common/helpers"
 	"strings"
 )
 

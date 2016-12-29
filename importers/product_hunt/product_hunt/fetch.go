@@ -3,7 +3,7 @@ package product_hunt
 import (
 	"encoding/json"
 	"github.com/pkg/errors"
-	"gitlab.com/epicglue/common-cli/helpers"
+	"github.com/yezooz/common-cli/helpers"
 	"net/http"
 	"regexp"
 )

@@ -1,6 +1,6 @@
 package main
 
-import "gitlab.com/epicglue/kickstarter-cli/cmd"
+import "github.com/yezooz/kickstarter-cli/cmd"
 
 func main() {
 	cmd.Execute()

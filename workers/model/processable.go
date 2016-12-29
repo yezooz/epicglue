@@ -1,6 +1,6 @@
 package worker_model
 
-import "gitlab.com/epicglue/epicglue/app/model"
+import "github.com/yezooz/epicglue/app/model"
 
 type Processable interface {
 	GetItem() *model.Item

@@ -5,10 +5,10 @@ package metric_postgres_test
 import (
 	"errors"
 	"github.com/stretchr/testify/assert"
-	"gitlab.com/epicglue/api/connection/database/postgres"
-	"gitlab.com/epicglue/api/helpers"
-	"gitlab.com/epicglue/api/metric/postgres"
-	"gitlab.com/epicglue/api/model"
+	"github.com/yezooz/api/connection/database/postgres"
+	"github.com/yezooz/api/helpers"
+	"github.com/yezooz/api/metric/postgres"
+	"github.com/yezooz/api/model"
 	"testing"
 )
 

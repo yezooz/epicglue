@@ -1,7 +1,7 @@
 package model
 
 import (
-	"gitlab.com/epicglue/common-cli/model"
+	"github.com/yezooz/common-cli/model"
 	"net/url"
 )
 

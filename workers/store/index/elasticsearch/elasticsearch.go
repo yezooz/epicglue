@@ -1,9 +1,9 @@
 package store_index_elasticsearch
 
 import (
-	"gitlab.com/epicglue/epicglue/app/connection/index"
-	"gitlab.com/epicglue/epicglue/app/connection/index/elasticsearch"
-	"gitlab.com/epicglue/epicglue/app/helpers"
+	"github.com/yezooz/epicglue/app/connection/index"
+	"github.com/yezooz/epicglue/app/connection/index/elasticsearch"
+	"github.com/yezooz/epicglue/app/helpers"
 )
 
 var log = helpers.GetLogger("process_store")

@@ -2,13 +2,13 @@ package reddit
 
 import (
 	"fmt"
+	"github.com/yezooz/common-cli/helpers"
+	"github.com/yezooz/common-cli/helpers/enum/item_type"
+	"github.com/yezooz/common-cli/helpers/enum/media_type"
+	"github.com/yezooz/common-cli/helpers/enum/service"
+	"github.com/yezooz/common-cli/model"
 	"github.com/yezooz/null"
-	"gitlab.com/epicglue/common-cli/helpers"
-	"gitlab.com/epicglue/common-cli/helpers/enum/item_type"
-	"gitlab.com/epicglue/common-cli/helpers/enum/media_type"
-	"gitlab.com/epicglue/common-cli/helpers/enum/service"
-	"gitlab.com/epicglue/common-cli/model"
-	"gitlab.com/epicglue/sanitize"
+	"github.com/yezooz/sanitize"
 	"html"
 )
 

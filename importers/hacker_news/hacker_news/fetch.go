@@ -3,7 +3,7 @@ package hacker_news
 import (
 	"encoding/json"
 	"fmt"
-	"gitlab.com/epicglue/epicglue/importers/common/helpers"
+	"github.com/yezooz/epicglue/importers/common/helpers"
 	"html"
 	"net/http"
 	"strings"

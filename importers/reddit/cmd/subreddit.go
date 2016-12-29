@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"gitlab.com/epicglue/common-cli/model"
-	"gitlab.com/epicglue/common-cli/output"
-	"gitlab.com/epicglue/reddit-cli/reddit"
+	"github.com/yezooz/common-cli/model"
+	"github.com/yezooz/common-cli/output"
+	"github.com/yezooz/reddit-cli/reddit"
 )
 
 // subredditCmd represents the subreddit command

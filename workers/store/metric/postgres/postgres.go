@@ -1,8 +1,8 @@
 package store_metric_postgres
 
 import (
-	"gitlab.com/epicglue/epicglue/app/helpers"
-	"gitlab.com/epicglue/epicglue/app/metric"
+	"github.com/yezooz/epicglue/app/helpers"
+	"github.com/yezooz/epicglue/app/metric"
 )
 
 var log = helpers.GetLogger("process_metric")

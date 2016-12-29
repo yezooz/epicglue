@@ -1,7 +1,7 @@
 package common
 
 import (
-	"gitlab.com/epicglue/meta-cli/common/model"
+	"github.com/yezooz/meta-cli/common/model"
 	"net/url"
 	"regexp"
 )

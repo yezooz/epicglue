@@ -2,7 +2,7 @@ package output
 
 import (
 	"fmt"
-	"gitlab.com/epicglue/common-cli/model"
+	"github.com/yezooz/common-cli/model"
 	"strings"
 )
 

@@ -1,13 +1,9 @@
 package main
 
 import (
-	"gitlab.com/epicglue/epicglue/app/config"
-	"gitlab.com/epicglue/epicglue/app/connection"
-	"gitlab.com/epicglue/epicglue/app/helpers"
-	"gitlab.com/epicglue/epicglue/app/worker/store/db"
-	"gitlab.com/epicglue/epicglue/app/worker/store/db/redis"
-	"gitlab.com/epicglue/epicglue/app/worker/store/index"
-	"gitlab.com/epicglue/epicglue/app/worker/store/metric"
+	"github.com/yezooz/epicglue/app/config"
+	"github.com/yezooz/epicglue/app/connection"
+	"github.com/yezooz/epicglue/app/helpers"
 	"time"
 )
 

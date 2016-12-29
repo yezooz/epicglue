@@ -2,11 +2,10 @@ package test_helper
 
 import (
 	"fmt"
-	"os"
-	"strings"
-
 	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/gorm/dialects/postgres"
+	"os"
+	"strings"
 )
 
 func TestDBConnection(dbNameSuffix string) *gorm.DB {

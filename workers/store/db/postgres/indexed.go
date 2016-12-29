@@ -3,7 +3,7 @@ package store_db_postgres
 import (
 	"fmt"
 	"github.com/Sirupsen/logrus"
-	"gitlab.com/epicglue/epicglue/app/helpers"
+	"github.com/yezooz/epicglue/app/helpers"
 	"runtime/debug"
 	"strings"
 	"time"

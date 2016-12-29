@@ -3,9 +3,9 @@ package cmd
 import (
 	"fmt"
 	"github.com/spf13/cobra"
-	"gitlab.com/epicglue/common-cli/model"
-	"gitlab.com/epicglue/common-cli/output"
-	"gitlab.com/epicglue/product-hunt-cli/product_hunt"
+	"github.com/yezooz/common-cli/model"
+	"github.com/yezooz/common-cli/output"
+	"github.com/yezooz/product-hunt-cli/product_hunt"
 )
 
 // categoryCmd represents the category command

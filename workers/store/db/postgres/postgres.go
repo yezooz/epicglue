@@ -2,8 +2,8 @@ package store_db_postgres
 
 import (
 	"github.com/jinzhu/gorm"
-	"gitlab.com/epicglue/epicglue/app/connection/database/postgres"
-	"gitlab.com/epicglue/epicglue/app/helpers"
+	"github.com/yezooz/epicglue/app/connection/database/postgres"
+	"github.com/yezooz/epicglue/app/helpers"
 )
 
 var log = helpers.GetLogger("worker_store")

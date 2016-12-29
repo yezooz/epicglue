@@ -3,8 +3,8 @@ package store_db_postgres
 import (
 	"database/sql"
 	"github.com/Sirupsen/logrus"
-	"gitlab.com/epicglue/epicglue/app/model"
-	"gitlab.com/epicglue/epicglue/app/worker/model"
+	"github.com/yezooz/epicglue/app/model"
+	"github.com/yezooz/epicglue/app/worker/model"
 	"runtime/debug"
 )
 

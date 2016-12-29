@@ -2,8 +2,8 @@ package product_hunt_test
 
 import (
 	"github.com/stretchr/testify/assert"
-	"gitlab.com/epicglue/product-hunt-cli/product_hunt"
-	"gitlab.com/epicglue/self-control"
+	"github.com/yezooz/product-hunt-cli/product_hunt"
+	"github.com/yezooz/self-control"
 	"io/ioutil"
 	"net/http"
 	"testing"

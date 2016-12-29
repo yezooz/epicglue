@@ -3,8 +3,8 @@ package store_metric_postgres
 import (
 	"fmt"
 	"github.com/Sirupsen/logrus"
-	"gitlab.com/epicglue/epicglue/app/model"
-	"gitlab.com/epicglue/epicglue/app/worker/model"
+	"github.com/yezooz/epicglue/app/model"
+	"github.com/yezooz/epicglue/app/worker/model"
 )
 
 func (m PostgresMetricStore) Glued(task *worker_model.Task) {

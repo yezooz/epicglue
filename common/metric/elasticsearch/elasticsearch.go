@@ -2,11 +2,11 @@ package elasticsearch_metric
 
 import (
 	"github.com/Sirupsen/logrus"
-	"gitlab.com/epicglue/api/connection/index"
-	"gitlab.com/epicglue/api/connection/index/elasticsearch"
-	"gitlab.com/epicglue/api/helpers"
-	"gitlab.com/epicglue/api/metric"
-	"gitlab.com/epicglue/api/model"
+	"github.com/yezooz/api/connection/index"
+	"github.com/yezooz/api/connection/index/elasticsearch"
+	"github.com/yezooz/api/helpers"
+	"github.com/yezooz/api/metric"
+	"github.com/yezooz/api/model"
 	"time"
 )
 

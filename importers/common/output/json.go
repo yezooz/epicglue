@@ -1,8 +1,7 @@
 package output
 
 import (
-	"github.com/dustin/gojson"
-	"gitlab.com/epicglue/common-cli/model"
+	"github.com/yezooz/common-cli/model"
 )
 
 type JSONOutput struct {

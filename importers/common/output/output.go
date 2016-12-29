@@ -1,6 +1,6 @@
 package output
 
-import "gitlab.com/epicglue/common-cli/model"
+import "github.com/yezooz/common-cli/model"
 
 type Output interface {
 	Post(item *model.Post) string

@@ -4,7 +4,7 @@ import (
 	"crypto/sha256"
 	"fmt"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
-	"gitlab.com/epicglue/epicglue/app/helpers"
+	"github.com/yezooz/epicglue/common/helpers"
 	"time"
 )
 

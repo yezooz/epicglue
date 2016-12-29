@@ -2,8 +2,8 @@ package server
 
 import (
 	"fmt"
-	"github.com/Sirupsen/logrus"
-	"github.com/julienschmidt/httprouter"
+	"github.com/gorilla/mux"
+	"github.com/uber-go/zap"
 	"github.com/yezooz/epicglue/api/server/endpoints"
 	"github.com/yezooz/epicglue/common/config"
 	"github.com/yezooz/epicglue/common/helpers"
@@ -12,170 +12,59 @@ import (
 )
 
 const (
-	APP_NAME = "Epic Glue"
+	APP_NAME = "EpicGlue"
 	VERSION  = 1
 )
 
 var (
-	log  = helpers.GetLogger("webserver")
+	log  = zap.New(zap.NewTextEncoder())
 	conf = config.LoadConfig()
 )
 
 func Run() {
-	router := httprouter.New()
+	r := mux.NewRouter()
 
-	//router.GET(getPath("items"), Log(Auth(Limit(GetItems()))))
-	//router.PUT(getPath("items"), Log(Auth(Limit(AddItems))))
-	//router.POST(getPath("items"), Log(Auth(Limit(UpdateItems))))
-	//router.DELETE(getPath("items"), Log(Auth(DeleteItems)))
-	//router.POST(getPath("items/count"), Log(Auth(Limit(Counters))))
+	r.HandleFunc("channels", endpoints.GetChannels).Methods(http.MethodGet)
+	r.HandleFunc("channel", endpoints.AddChannel).Methods(http.MethodPut)
+	r.HandleFunc("channel/:id", endpoints.UpdateChannel).Methods(http.MethodPost)
+	r.HandleFunc("channel/:id", endpoints.DeleteChannel).Methods(http.MethodDelete)
 
-	router.GET(getPath("channels"), Log(Auth(Limit(endpoints.GetChannels))))
-	router.PUT(getPath("channel"), Log(Auth(Limit(endpoints.AddChannel))))
-	router.POST(getPath("channel/:id"), Log(Auth(Limit(endpoints.UpdateChannel))))
-	router.DELETE(getPath("channel/:id"), Log(Auth(Limit(endpoints.DeleteChannel))))
+	r.HandleFunc("pipes", endpoints.GetPipes).Methods(http.MethodGet)
+	r.HandleFunc("pipe", endpoints.AddPipe).Methods(http.MethodPut)
+	r.HandleFunc("pipe/:id", endpoints.UpdatePipe).Methods(http.MethodPost)
+	r.HandleFunc("pipe/:id", endpoints.DeletePipe).Methods(http.MethodDelete)
 
-	router.GET(getPath("pipes"), Log(Auth(Limit(endpoints.GetPipe))))
-	router.PUT(getPath("pipe"), Log(Auth(Limit(endpoints.AddPipe))))
-	router.POST(getPath("pipe/:id"), Log(Auth(Limit(endpoints.UpdatePipe))))
-	router.DELETE(getPath("pipe/:id"), Log(Auth(Limit(endpoints.DeletePipe))))
-
-	//router.POST(getPath("login"), Log(LoginByEmail))
-	//router.POST(getPath("register/email"), Log(RegisterByEmail))
-	//router.POST(getPath("register/service"), Log(RegisterByService))
-	//router.POST(getPath("register/device"), Log(RegisterByDevice))
-
-	//router.GET(getPath("me"), Log(Auth(Me)))
-	//router.POST(getPath("feedback"), Log(Auth(Feedback)))
-	//router.PUT(getPath("me/service"), Log(Auth(ConnectService)))
-	//router.DELETE(getPath("me/service"), Log(Auth(DisconnectService)))
+	//r.GET(getPath("items"), Log(Auth(Limit(GetItems()))))
+	//r.PUT(getPath("items"), Log(Auth(Limit(AddItems))))
+	//r.POST(getPath("items"), Log(Auth(Limit(UpdateItems))))
+	//r.DELETE(getPath("items"), Log(Auth(DeleteItems)))
+	//r.POST(getPath("items/count"), Log(Auth(Limit(Counters))))
+	//
+	//r.POST(getPath("login"), Log(LoginByEmail))
+	//r.POST(getPath("register/email"), Log(RegisterByEmail))
+	//r.POST(getPath("register/service"), Log(RegisterByService))
+	//r.POST(getPath("register/device"), Log(RegisterByDevice))
+	//
+	//r.GET(getPath("me"), Log(Auth(Me)))
+	//r.POST(getPath("feedback"), Log(Auth(Feedback)))
+	//r.PUT(getPath("me/service"), Log(Auth(ConnectService)))
+	//r.DELETE(getPath("me/service"), Log(Auth(DisconnectService)))
 
 	log.Info("Server starting...")
 
-	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", conf.App.Port), router))
+	srv := &http.Server{
+		Handler: r,
+		Addr:    "127.0.0.1:8000",
+		// Good practice: enforce timeouts for servers you create!
+		WriteTimeout: 15 * time.Second,
+		ReadTimeout:  15 * time.Second,
+	}
+
+	log.Fatal(srv.ListenAndServe().Error())
 }
 
 func getPath(url string) string {
 	return fmt.Sprintf("/v%d/%s", VERSION, url)
-}
-
-// Auth provides Token-based (JWT) auth
-func Auth(h httprouter.Handle) httprouter.Handle {
-	return func(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
-		//    token, err := jwt.Parse(r.Header.Get("Token"), func(token *jwt.Token) (interface{}, error) {
-		//        if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
-		//            return nil, fmt.Errorf("Unexpected signing method: %v", token.Header["alg"])
-		//        }
-		//
-		//        lookup := func(kind interface{}) (interface{}, error) {
-		//            return []byte(conf.App.Secret), nil
-		//        }
-		//
-		//        return lookup(token.Header["kind"])
-		//    })
-		//
-		//    if err != nil {
-		//        w.Header().Add("Content-type", "application/json")
-		//        w.WriteHeader(http.StatusUnauthorized)
-		//        w.Write([]byte(`{"error":"User Unknown", "code": 100}`))
-		//        return
-		//    }
-		//
-		//    if claims, ok := token.Claims.(jwt.MapClaims); ok && token.Valid {
-		//        um := user_manager.NewDefaultUserManager(int64(claims["userId"].(float64)))
-		//
-		//        if um == nil {
-		//            w.Header().Add("Content-type", "application/json")
-		//            w.WriteHeader(http.StatusUnauthorized)
-		//            w.Write([]byte(`{"error":"User Unknown", "code": 100}`))
-		//            return
-		//        }
-		//
-		//        if !um.IsTokenActive(token.Raw) {
-		//            w.Header().Add("Content-type", "application/json")
-		//            w.WriteHeader(http.StatusUnauthorized)
-		//            //w.Write([]byte(`{"error":"Token Invalid", "code": 101}`))
-		//            return
-		//        }
-		//
-		//        // TODO: use context instead
-		//        r.Header.Set("User", um.GetUser().Username)
-		//        r.Header.Set("UserId", fmt.Sprintf("%d", um.GetUser().Id))
-		//
-		//        h(w, r, ps)
-		//    } else {
-		//        w.Header().Add("Content-type", "application/json")
-		//        w.WriteHeader(http.StatusUnauthorized)
-		//        w.Write([]byte(`{"error":"User Unknown", "code": 100}`))
-		//    }
-	}
-}
-
-func Public(h httprouter.Handle) httprouter.Handle {
-	return func(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
-		// extra logging
-	}
-}
-
-// Only for internal use
-func Private(h httprouter.Handle) httprouter.Handle {
-	return func(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
-
-	}
-}
-
-// Log sends each request to logger
-func Log(h httprouter.Handle) httprouter.Handle {
-	return func(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
-		h(w, r, ps)
-
-		log.WithFields(logrus.Fields{
-			"method":   r.Method,
-			"endpoint": r.URL.Path,
-		}).Infof("%s %s", r.Method, r.URL.Path)
-	}
-}
-
-// Limit does Rate-Limiting for endpoints
-func Limit(h httprouter.Handle) httprouter.Handle {
-	return func(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
-		//now := time.Now()
-		//token := r.Header.Get("Token")
-		//key := fmt.Sprintf("token:%s:%d:%s:%d:%d", token, now.Year(), now.Month(), now.Day(), now.Hour())
-		//
-		//if n, err := redisClient.GetCount(key); err == nil {
-		//    if n > 0 {
-		//        n, _ = redisClient.Decrement(key, 1)
-		//
-		//        SetHeaders(w, n)
-		//
-		//        log.WithFields(logrus.Fields{
-		//            "token": token,
-		//            "left":  n,
-		//        }).Debug("Tokens left")
-		//    } else {
-		//        log.WithFields(logrus.Fields{
-		//            "token": token,
-		//        }).Debug("No tokens left")
-		//
-		//        w.Header().Add("Content-type", "application/json")
-		//        w.WriteHeader(429)
-		//        w.Write([]byte(`{"error":"All Tokens Used", "code": 110}`))
-		//        return
-		//    }
-		//} else {
-		//    redisClient.SetCount(key, int64(conf.API.RequestLimit), int64(conf.API.RequestLimitKeyExpiry))
-		//
-		//    SetHeaders(w, int64(conf.API.RequestLimit))
-		//
-		//    log.WithFields(logrus.Fields{
-		//        "token": token,
-		//        "left":  n,
-		//    }).Debug("Tokens reset")
-		//}
-		//
-		//h(w, r, ps)
-	}
 }
 
 func SetHeaders(w http.ResponseWriter, remaining int64) {

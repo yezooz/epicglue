@@ -3,8 +3,8 @@ package hacker_news
 import (
 	"fmt"
 	"github.com/uber-go/zap"
-	"gitlab.com/epicglue/common-cli/robot"
-	"gitlab.com/epicglue/self-control"
+	"github.com/yezooz/common-cli/robot"
+	"github.com/yezooz/self-control"
 	"net/http"
 )
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/Sirupsen/logrus"
 	"github.com/rifflock/lfshook"
-	"gitlab.com/epicglue/epicglue/app/config"
+	"github.com/yezooz/epicglue/common/config"
 	"os"
 	"sync"
 )

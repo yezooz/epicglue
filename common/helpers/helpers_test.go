@@ -2,8 +2,8 @@ package helpers_test
 
 import (
 	"github.com/stretchr/testify/assert"
-	"gitlab.com/epicglue/epicglue/app/helpers"
-	"gitlab.com/epicglue/epicglue/app/helpers/test"
+	"github.com/yezooz/epicglue/common/helpers"
+	"github.com/yezooz/epicglue/common/helpers/test"
 	"io/ioutil"
 	"strings"
 	"testing"

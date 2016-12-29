@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"gitlab.com/epicglue/epicglue/app/config"
-	"gitlab.com/epicglue/epicglue/app/model"
+	"github.com/yezooz/epicglue/common/config"
+	"github.com/yezooz/epicglue/common/model"
 	"io/ioutil"
 	"net/http"
 	"net/url"
@@ -105,7 +105,7 @@ func makeURLRequestOfTypeForUser(requestType string, path string, data map[strin
 
 func makeURLRequestOfTypeWithPayloadForUser(requestType string, path string, jsonData interface{}, userId int64) *http.Request {
 	user := &model.User{
-		Id: userId,
+		ID: userId,
 	}
 
 	user_manager.NewDefaultUserManagerWithUser(user).GenerateAndStoreToken()

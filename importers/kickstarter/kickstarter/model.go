@@ -3,11 +3,11 @@ package kickstarter
 import (
 	"fmt"
 	"github.com/spf13/cast"
+	"github.com/yezooz/common-cli/helpers"
+	"github.com/yezooz/common-cli/helpers/enum/item_type"
+	"github.com/yezooz/common-cli/helpers/enum/service"
+	"github.com/yezooz/common-cli/model"
 	"github.com/yezooz/null"
-	"gitlab.com/epicglue/common-cli/helpers"
-	"gitlab.com/epicglue/common-cli/helpers/enum/item_type"
-	"gitlab.com/epicglue/common-cli/helpers/enum/service"
-	"gitlab.com/epicglue/common-cli/model"
 	"time"
 )
 

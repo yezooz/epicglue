@@ -1,6 +1,6 @@
 package service
 
-import "gitlab.com/epicglue/common-cli/model"
+import "github.com/yezooz/common-cli/model"
 
 func NewKickstarterService() *model.Service {
 	return &model.Service{

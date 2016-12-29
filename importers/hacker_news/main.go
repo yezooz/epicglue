@@ -1,6 +1,6 @@
 package main
 
-import "gitlab.com/epicglue/epicglue/importers/hacker_news/cmd"
+import "github.com/yezooz/epicglue/importers/hacker_news/cmd"
 
 func main() {
 	cmd.Execute()

@@ -2,8 +2,8 @@ package channel_test
 
 import (
 	"github.com/stretchr/testify/assert"
-	"gitlab.com/epicglue/epicglue/app/manager/channel"
-	"gitlab.com/epicglue/epicglue/app/model"
+	"github.com/yezooz/epicglue/app/manager/channel"
+	"github.com/yezooz/epicglue/app/model"
 	r "gopkg.in/dancannon/gorethink.v2"
 	"testing"
 	"time"

@@ -2,7 +2,7 @@ package reddit
 
 import (
 	"encoding/json"
-	"gitlab.com/epicglue/common-cli/helpers"
+	"github.com/yezooz/common-cli/helpers"
 	"net/http"
 )
 

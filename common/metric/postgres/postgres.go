@@ -3,10 +3,10 @@ package metric_postgres
 import (
 	"github.com/Sirupsen/logrus"
 	"github.com/jinzhu/gorm"
-	"gitlab.com/epicglue/api/connection/database/postgres"
-	"gitlab.com/epicglue/api/helpers"
-	"gitlab.com/epicglue/api/metric"
-	"gitlab.com/epicglue/api/model"
+	"github.com/yezooz/api/connection/database/postgres"
+	"github.com/yezooz/api/helpers"
+	"github.com/yezooz/api/metric"
+	"github.com/yezooz/api/model"
 	"runtime/debug"
 	"time"
 )

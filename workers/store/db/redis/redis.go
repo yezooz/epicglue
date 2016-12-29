@@ -1,8 +1,8 @@
 package store_redis_db
 
 import (
-	"gitlab.com/epicglue/epicglue/app/connection/key_value_store"
-	"gitlab.com/epicglue/epicglue/app/connection/key_value_store/redis"
+	"github.com/yezooz/epicglue/app/connection/key_value_store"
+	"github.com/yezooz/epicglue/app/connection/key_value_store/redis"
 )
 
 type RedisStore struct {
