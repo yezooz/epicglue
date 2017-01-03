@@ -84,7 +84,7 @@ func TestManager_Get(t *testing.T) {
 
 func TestManager_All(t *testing.T) {
 	//now := time.Now()
-	//user := model.User{
+	//user := generic_model.User{
 	//    ID:        1,
 	//    CreatedAt: time.Now(),
 	//}
@@ -162,20 +162,20 @@ func TestManager_All(t *testing.T) {
 //
 //    var (
 //        dm       manager.DataManager = manager.NewManagerWithConnectors(DB, nil).Data()
-//        channels []model.Channel
+//        channels []generic_model.Channel
 //        err      error
 //    )
 //
 //    // Insert some test data
-//    u1 := model.User{Username: "test_user"}
-//    u2 := model.User{Username: "test_user_2"}
+//    u1 := generic_model.User{Username: "test_user"}
+//    u2 := generic_model.User{Username: "test_user_2"}
 //    DB.Save(&u1).Save(&u2)
 //
-//    ch1 := model.Channel{Cmd: null.StringFrom("reddit --first 10 --sub images"), GroupName: "reddit", Name: "/r/images", IsActive: true, MinRefresh: 300}
-//    ch2 := model.Channel{Cmd: null.StringFrom("reddit --first 10 --sub wtf"), GroupName: "reddit", Name: "/r/wtf", IsActive: true, MinRefresh: 300}
-//    ch3 := model.Channel{UserId: null.IntFrom(u1.Id), GroupName: "own", Name: "/r/wtf", IsActive: true, MinRefresh: 300}
-//    ch4 := model.Channel{GroupName: "hidden", Name: "hidden channel", IsActive: true, IsHidden: true, MinRefresh: 300}
-//    ch5 := model.Channel{UserId: null.IntFrom(u2.Id), GroupName: "not_active", Name: "not active channel", IsActive: false, MinRefresh: 300}
+//    ch1 := generic_model.Channel{Cmd: null.StringFrom("reddit --first 10 --sub images"), GroupName: "reddit", Name: "/r/images", IsActive: true, MinRefresh: 300}
+//    ch2 := generic_model.Channel{Cmd: null.StringFrom("reddit --first 10 --sub wtf"), GroupName: "reddit", Name: "/r/wtf", IsActive: true, MinRefresh: 300}
+//    ch3 := generic_model.Channel{UserId: null.IntFrom(u1.Id), GroupName: "own", Name: "/r/wtf", IsActive: true, MinRefresh: 300}
+//    ch4 := generic_model.Channel{GroupName: "hidden", Name: "hidden channel", IsActive: true, IsHidden: true, MinRefresh: 300}
+//    ch5 := generic_model.Channel{UserId: null.IntFrom(u2.Id), GroupName: "not_active", Name: "not active channel", IsActive: false, MinRefresh: 300}
 //    DB.Save(&ch1).Save(&ch2).Save(&ch3).Save(&ch4).Save(&ch5)
 //
 //    // Tests for two users, second should see only public channels
@@ -200,16 +200,16 @@ func TestManager_All(t *testing.T) {
 //
 //    var (
 //        dm       manager.DataManager = manager.NewManagerWithConnectors(DB, nil).Data()
-//        channels []model.Channel
+//        channels []generic_model.Channel
 //        err      error
 //    )
 //
 //    // Insert some test data
-//    u1 := model.User{Username: "test_user"}
+//    u1 := generic_model.User{Username: "test_user"}
 //    DB.Save(&u1)
 //
-//    ch1 := model.Channel{Cmd: null.StringFrom("reddit --first 10 --sub images"), GroupName: "reddit", Name: "/r/images", IsActive: true, MinRefresh: 300}
-//    ch2 := model.Channel{UserId: null.IntFrom(u1.Id), GroupName: "own", Name: "/r/wtf", IsActive: true, MinRefresh: 300}
+//    ch1 := generic_model.Channel{Cmd: null.StringFrom("reddit --first 10 --sub images"), GroupName: "reddit", Name: "/r/images", IsActive: true, MinRefresh: 300}
+//    ch2 := generic_model.Channel{UserId: null.IntFrom(u1.Id), GroupName: "own", Name: "/r/wtf", IsActive: true, MinRefresh: 300}
 //    DB.Save(&ch1).Save(&ch2)
 //
 //    // Test
@@ -232,13 +232,13 @@ func TestManager_All(t *testing.T) {
 //
 //    var (
 //        dm       manager.DataManager = manager.NewManagerWithConnectors(DB, nil).Data()
-//        channel  *model.Channel
-//        channels []model.Channel
+//        channel  *generic_model.Channel
+//        channels []generic_model.Channel
 //        err      error
 //    )
 //
 //    // Insert some test data
-//    u1 := model.User{Username: "test_user"}
+//    u1 := generic_model.User{Username: "test_user"}
 //    DB.Save(&u1)
 //
 //    // Test
@@ -275,15 +275,15 @@ func TestManager_All(t *testing.T) {
 //        dm       manager.DataManager = manager.NewManagerWithConnectors(DB, nil).Data()
 //        ch1      int64
 //        ch2      int64
-//        channel  *model.Channel
-//        channels []model.Channel
+//        channel  *generic_model.Channel
+//        channels []generic_model.Channel
 //        err      error
 //        desc     string = "description"
 //    )
 //
 //    // Insert some test data
-//    u1 := model.User{Username: "test_user"}
-//    u2 := model.User{Username: "test_user_2"}
+//    u1 := generic_model.User{Username: "test_user"}
+//    u2 := generic_model.User{Username: "test_user_2"}
 //    DB.Save(&u1).Save(&u2)
 //
 //    // Validate test data
@@ -346,14 +346,14 @@ func TestManager_All(t *testing.T) {
 //    var (
 //        dm       manager.DataManager = manager.NewManagerWithConnectors(DB, nil).Data()
 //        ch1      int64
-//        channel  *model.Channel
-//        channels []model.Channel
+//        channel  *generic_model.Channel
+//        channels []generic_model.Channel
 //        err      error
 //    )
 //
 //    // Insert some test data
-//    u1 := model.User{Username: "test_user"}
-//    u2 := model.User{Username: "test_user_2"}
+//    u1 := generic_model.User{Username: "test_user"}
+//    u2 := generic_model.User{Username: "test_user_2"}
 //    DB.Save(&u1).Save(&u2)
 //
 //    // Validate test data

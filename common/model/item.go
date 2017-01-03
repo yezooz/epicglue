@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-var log = helpers.GetLogger("model")
+var log = helpers.GetLogger("generic_model")
 
 type Item struct {
 	ID          string `json:"id" gorethink:"id,omitempty"`

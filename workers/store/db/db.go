@@ -1,6 +1,6 @@
 package store_db
 
-// TODO: This model clearly doesn't work. DB and Redis hold different functions but are both for storage.
+// TODO: This generic_model clearly doesn't work. DB and Redis hold different functions but are both for storage.
 
 type DBStore interface {
 	ItemsToIndex(tasks chan *worker_model.Task, limit uint64)

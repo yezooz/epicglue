@@ -5,7 +5,7 @@ import (
 )
 
 //func TestItem(t *testing.T) {
-//	item := model.Item{}
+//	item := generic_model.Item{}
 //
 //	db := postgres.NewPostgres().First(&item, "id = ?", "f970faa69e0d08c3ad227b8678541c4e810a96e5fb48c7ce064287e6585b978f")
 //	if db.Error != nil {
