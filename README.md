@@ -1,8 +1,7 @@
 WORK IN PROGRESS
 =
 
-EpicGlue is your personal, independent platform for storing different kind of data.
-
+EpicGlue is your personal, independent and transparent data platform.
 
 
 
@@ -15,7 +14,7 @@ interface to interact with EG
 Clients
 --
 - CLI
-- iOS
+- EpicReader iOS
 
 Importers
 --

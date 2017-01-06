@@ -3,15 +3,15 @@ package metric_postgres
 import (
 	"github.com/Sirupsen/logrus"
 	"github.com/jinzhu/gorm"
+	"github.com/uber-go/zap"
 	"github.com/yezooz/api/connection/database/postgres"
-	"github.com/yezooz/api/helpers"
 	"github.com/yezooz/api/metric"
 	"github.com/yezooz/api/model"
 	"runtime/debug"
 	"time"
 )
 
-var log = helpers.GetLogger("metric")
+var log = zap.New(zap.NewJSONEncoder())
 
 type PostgresMetric struct {
 	user       *model.User

@@ -26,29 +26,8 @@ func Run() {
 
 	r.HandleFunc("channels", endpoints.GetChannels).Methods(http.MethodGet)
 	r.HandleFunc("channel", endpoints.AddChannel).Methods(http.MethodPut)
-	r.HandleFunc("channel/:id", endpoints.UpdateChannel).Methods(http.MethodPost)
-	r.HandleFunc("channel/:id", endpoints.DeleteChannel).Methods(http.MethodDelete)
-
-	r.HandleFunc("pipes", endpoints.GetPipes).Methods(http.MethodGet)
-	r.HandleFunc("pipe", endpoints.AddPipe).Methods(http.MethodPut)
-	r.HandleFunc("pipe/:id", endpoints.UpdatePipe).Methods(http.MethodPost)
-	r.HandleFunc("pipe/:id", endpoints.DeletePipe).Methods(http.MethodDelete)
-
-	//r.GET(getPath("items"), Log(Auth(Limit(GetItems()))))
-	//r.PUT(getPath("items"), Log(Auth(Limit(AddItems))))
-	//r.POST(getPath("items"), Log(Auth(Limit(UpdateItems))))
-	//r.DELETE(getPath("items"), Log(Auth(DeleteItems)))
-	//r.POST(getPath("items/count"), Log(Auth(Limit(Counters))))
-	//
-	//r.POST(getPath("login"), Log(LoginByEmail))
-	//r.POST(getPath("register/email"), Log(RegisterByEmail))
-	//r.POST(getPath("register/service"), Log(RegisterByService))
-	//r.POST(getPath("register/device"), Log(RegisterByDevice))
-	//
-	//r.GET(getPath("me"), Log(Auth(Me)))
-	//r.POST(getPath("feedback"), Log(Auth(Feedback)))
-	//r.PUT(getPath("me/service"), Log(Auth(ConnectService)))
-	//r.DELETE(getPath("me/service"), Log(Auth(DisconnectService)))
+	r.HandleFunc("channel/{id}", endpoints.UpdateChannel).Methods(http.MethodPost)
+	r.HandleFunc("channel/{id}", endpoints.DeleteChannel).Methods(http.MethodDelete)
 
 	log.Info("Server starting...")
 
