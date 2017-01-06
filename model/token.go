@@ -1,16 +1,18 @@
 package model
 
 import (
+	"github.com/satori/go.uuid"
 	"time"
 )
 
 type Token struct {
-	Service      Service    `json:"service" gorethink:"service_id,reference" gorethink_ref:"id"`
-	Identifier   string     `json:"identifier" gorethink:"identifier"`
-	FriendlyName *string    `json:"friendly_name" gorethink:"friendly_name"`
-	Token        string     `json:"token" gorethink:"token"`
-	TokenSecret  *string    `json:"token_secret" gorethink:"token_secret"`
-	RefreshToken *string    `json:"refresh_token" gorethink:"refresh_token"`
-	Expiry       *time.Time `json:"expiry" gorethink:"expiry"`
-	Scope        *string    `json:"scope" gorethink:"scope"`
+	ID           uuid.UUID `json:"id" meddler:"id,pk"`
+	Service      Service   `json:"service" meddler:"service_id"`
+	Handle       string    `json:"handle" meddler:"handle"`
+	FriendlyName string    `json:"friendly_name" meddler:"friendly_name"`
+	Token        string    `json:"token" meddler:"token"`
+	TokenSecret  string    `json:"token_secret" meddler:"token_secret"`
+	RefreshToken string    `json:"refresh_token" meddler:"refresh_token"`
+	Expiry       time.Time `json:"expiry" meddler:"expiry"`
+	Scope        string    `json:"scope" meddler:"scope"`
 }

@@ -5,11 +5,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/drone/drone/store"
-	"github.com/drone/drone/store/datastore/ddl"
 	"github.com/russross/meddler"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/yezooz/epicglue/api/store"
+	"github.com/yezooz/epicglue/api/store/datastore/ddl"
 )
 
 // datastore is an implementation of a model.Store built on top
@@ -89,7 +88,7 @@ func pingDatabase(db *sql.DB) (err error) {
 	return
 }
 
-// helper function to setup the databsae by performing
+// helper function to setup the database by performing
 // automated database migration steps.
 func setupDatabase(driver string, db *sql.DB) error {
 	var migrations = &migrate.AssetMigrationSource{

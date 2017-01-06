@@ -1,12 +1,14 @@
-package service
+package service_name
+
+type ServiceName string
 
 const (
-	Instagram   = "instagram"
-	Twitter     = "twitter"
-	Facebook    = "facebook"
-	HackerNews  = "hacker_news"
-	YouTube     = "youtube"
-	Reddit      = "reddit"
-	Kickstarter = "kickstarter"
-	ProductHunt = "producthunt"
+	Instagram   ServiceName = "instagram"
+	Twitter     ServiceName = "twitter"
+	Facebook    ServiceName = "facebook"
+	HackerNews  ServiceName = "hacker_news"
+	YouTube     ServiceName = "youtube"
+	Reddit      ServiceName = "reddit"
+	Kickstarter ServiceName = "kickstarter"
+	ProductHunt ServiceName = "product_hunt"
 )

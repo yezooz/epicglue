@@ -1,6 +1,8 @@
 package visibility
 
+type Visiblity string
+
 const (
-	Public  = "public"
-	Private = "private"
+	Public  Visiblity = "public"
+	Private Visiblity = "private"
 )

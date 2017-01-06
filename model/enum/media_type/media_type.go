@@ -1,15 +1,17 @@
 package media_type
 
+type MediaType string
+
 const (
-	Link      = "link"
-	Photo     = "photo"
-	Video     = "video"
-	Text      = "text"
-	Event     = "event"
-	Tweet     = "tweet"
-	Payment   = "payment"
-	Like      = "like"
-	Comment   = "comment"
-	Auction   = "auction"
-	Crowdfund = "crowdfund"
+	Link      MediaType = "link"
+	Photo     MediaType = "photo"
+	Video     MediaType = "video"
+	Text      MediaType = "text"
+	Event     MediaType = "event"
+	Tweet     MediaType = "tweet"
+	Payment   MediaType = "payment"
+	Like      MediaType = "like"
+	Comment   MediaType = "comment"
+	Auction   MediaType = "auction"
+	Crowdfund MediaType = "crowdfund"
 )

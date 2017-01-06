@@ -1,15 +1,16 @@
 package model
 
 import (
+	"github.com/satori/go.uuid"
 	"time"
 )
 
 type Service struct {
-	ID          int64      `json:"id,omitempty" gorethink:"id,omitempty"`
-	ShortName   string     `json:"short_name" gorethink:"short_name"`
-	Name        string     `json:"name,omitempty" gorethink:"name"`
-	Description *string    `json:"description,omitempty" gorethink:"description"`
-	IsVisible   bool       `json:"-" gorethink:"is_visible"`
-	CreatedAt   time.Time  `json:"-" gorethink:"created_at"`
-	UpdatedAt   *time.Time `json:"-" gorethink:"updated_at"`
+	ID          uuid.UUID  `json:"id,omitempty" meddler:"id,pk"`
+	ShortName   string     `json:"short_name" meddler:"short_name"`
+	Name        string     `json:"name,omitempty" meddler:"name"`
+	Description *string    `json:"description,omitempty" meddler:"description"`
+	IsVisible   bool       `json:"-" meddler:"is_visible"`
+	CreatedAt   time.Time  `json:"-" meddler:"created_at"`
+	UpdatedAt   *time.Time `json:"-" meddler:"updated_at"`
 }

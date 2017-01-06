@@ -1,14 +1,15 @@
 package model
 
 import (
+	"github.com/satori/go.uuid"
 	"time"
 )
 
 type ItemRaw struct {
-	ID        string     `gorethink:"id,omitempty" gorethink:"id,omitempty"`
-	Hash      string     `json:"hash" gorethink:"hash"`
-	JSON      []byte     `json:"json" gorethink:"json"`
-	Text      []byte     `json:"text" gorethink:"text"`
-	CreatedAt *time.Time `json:"-" gorethink:"created_at"`
-	UpdatedAt *time.Time `json:"-" gorethink:"updated_at"`
+	ID        uuid.UUID  `gorethink:"id,omitempty" meddler:"id,pk"`
+	Hash      []byte     `json:"hash" meddler:"hash"`
+	JSON      []byte     `json:"json" meddler:"json"`
+	Text      []byte     `json:"text" meddler:"text"`
+	CreatedAt *time.Time `json:"-" meddler:"created_at"`
+	UpdatedAt *time.Time `json:"-" meddler:"updated_at"`
 }

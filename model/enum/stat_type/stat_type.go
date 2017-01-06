@@ -1,11 +1,13 @@
 package stat_type
 
+type StatType string
+
 const (
-	Karma     = "karma"
-	Following = "following"
-	Followers = "followers"
-	Posts     = "posts"
-	Comments  = "comments"
-	Liked     = "liked"
-	Listed    = "listed"
+	Karma     StatType = "karma"
+	Following StatType = "following"
+	Followers StatType = "followers"
+	Posts     StatType = "posts"
+	Comments  StatType = "comments"
+	Liked     StatType = "liked"
+	Listed    StatType = "listed"
 )

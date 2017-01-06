@@ -1,19 +1,21 @@
 package item_type
 
+type ItemType string
+
 const (
-	InstagramPost      = "instagram.post"
-	InstagramPopular   = "instagram.popular"
-	InstagramLocation  = "instagram.location"
-	InstagramLike      = "instagram.like"
-	InstagramComment   = "instagram.comment"
-	InstagramFollowing = "instagram.following"
-	InstagramFollower  = "instagram.follower"
+	InstagramPost      ItemType = "instagram.post"
+	InstagramPopular   ItemType = "instagram.popular"
+	InstagramLocation  ItemType = "instagram.location"
+	InstagramLike      ItemType = "instagram.like"
+	InstagramComment   ItemType = "instagram.comment"
+	InstagramFollowing ItemType = "instagram.following"
+	InstagramFollower  ItemType = "instagram.follower"
 
-	HackerNewsPost = "hacker_news.post"
-	HackerNewsShow = "hacker_news.show"
-	HackerNewsAsk  = "hacker_news.ask"
+	HackerNewsPost ItemType = "hacker_news.post"
+	HackerNewsShow ItemType = "hacker_news.show"
+	HackerNewsAsk  ItemType = "hacker_news.ask"
 
-	ProductHuntPost = "producthunt.post"
+	ProductHuntPost ItemType = "producthunt.post"
 
-	KickstarterAuction = "kickstarter.auction"
+	KickstarterAuction ItemType = "kickstarter.auction"
 )

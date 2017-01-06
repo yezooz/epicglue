@@ -2,49 +2,70 @@ package model
 
 import (
 	"crypto/sha256"
-	"fmt"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
-	"github.com/yezooz/epicglue/common/helpers"
+	"github.com/satori/go.uuid"
+	"github.com/yezooz/epicglue/model/enum/item_type"
+	"github.com/yezooz/epicglue/model/enum/media_type"
+	"github.com/yezooz/epicglue/model/enum/service"
+	"github.com/yezooz/epicglue/model/enum/visibility"
 	"time"
 )
 
-var log = helpers.GetLogger("generic_model")
+type Tag string
 
-type Item struct {
-	ID          string `json:"id" gorethink:"id,omitempty"`
-	ItemContent `json:"content" gorethink:"item_content"`
-	ItemType    string    `json:"item_type" gorethink:"item_type"`
-	MediaType   string    `json:"media_type" gorethink:"media_type"`
-	Service     string    `json:"service" gorethink:"service"`
-	Title       *string   `json:"title,omitempty" gorethink:"title"`
-	Description *string   `json:"description,omitempty" gorethink:"description"`
-	Author      string    `json:"author" gorethink:"author"`
-	AuthorMedia *Media    `json:"author_media" gorethink:"author_media"`
-	Media       []*Media  `json:"media,omitempty" gorethink:"media"`
-	Location    *Location `json:"location,omitempty" gorethink:"location"`
-	Links       `json:"links" gorethink:"links"`
-	Tags        []string   `json:"tags,omitempty" gorethink:"tags"`
-	Visibility  string     `json:"-" gorethink:"visibility"`
-	Points      *int64     `json:"point,omitempty" gorethink:"points"`
-	Comments    *int64     `json:"comments,omitempty" gorethink:"comments"`
-	IsRead      bool       `json:"is_read" gorethink:"-"`
-	IsGlued     bool       `json:"is_glued" gorethink:"-"`
-	Channels    []int64    `json:"channels,omitempty" gorethink:"-"`
-	CreatedAt   time.Time  `json:"created_at" gorethink:"created_at"`
-	UpdatedAt   *time.Time `json:"updated_at,omitempty" gorethink:"updated_at"`
-	DeletedAt   *time.Time `json:"deleted_at,omitempty" gorethink:"deleted_at"`
-	IndexedAt   time.Time  `json:"indexed_at" gorethink:"-"`
+type Items []Item
+
+type Media struct {
+	Original  *Medium `json:"original,omitempty" meddler:"original"`
+	Large     *Medium `json:"large,omitempty" meddler:"large"`
+	Medium    *Medium `json:"medium,omitempty" meddler:"medium"`
+	Small     *Medium `json:"small,omitempty" meddler:"small"`
+	Thumbnail *Medium `json:"thumbnail,omitempty" meddler:"thumbnail"`
 }
 
-func (i *Item) buildHash() string {
-	content_id := i.ItemContent.ID
-	if i.ItemContent.SecondaryID != nil {
-		content_id = *i.ItemContent.SecondaryID
-	}
+type Medium struct {
+	Url      string  `json:"url" meddler:"url"`
+	CacheUrl string  `json:"cache_url,omitempty" meddler:"cache_url"`
+	Width    int64   `json:"width,omitempty" meddler:"width"`
+	Height   int64   `json:"height,omitempty" meddler:"height"`
+	Preview  *Medium `json:"preview,omitempty" meddler:"preview"`
+}
 
-	hasher := sha256.New()
-	hasher.Write([]byte(i.Service))
-	hasher.Write([]byte(content_id))
+type Location struct {
+	Name *string  `json:"name,omitempty" meddler:"name"`
+	Lat  *float64 `json:"lat,omitempty" meddler:"lat"`
+	Lon  *float64 `json:"lon,omitempty" meddler:"lon"`
+}
 
-	return fmt.Sprintf("%x", hasher.Sum(nil))
+type Item struct {
+	ID           uuid.UUID                `json:"id" meddler:"id,pk"`
+	ItemID       uuid.UUID                `json:"item_id" meddler:"item_id"`
+	ItemType     item_type.ItemType       `json:"item_type" meddler:"item_type"`
+	MediaType    media_type.MediaType     `json:"media_type" meddler:"media_type"`
+	ServiceName  service_name.ServiceName `json:"service" meddler:"service"`
+	Title        string                   `json:"title,omitempty" meddler:"title,zeroisnull"`
+	Description  string                   `json:"description,omitempty" meddler:"description,zeroisnull"`
+	Author       string                   `json:"author" meddler:"author"`
+	AuthorMedia  *Media                   `json:"author_media" meddler:"author_media"`
+	Media        []*Media                 `json:"media,omitempty" meddler:"media"`
+	Location     *Location                `json:"location,omitempty" meddler:"location"`
+	DefaultLink  string                   `json:"default" meddler:"link_default"`
+	InternalLink *string                  `json:"internal,default,omitempty" meddler:"link_internal"`
+	ExternalLink *string                  `json:"external,default,omitempty" meddler:"link_external"`
+	Tags         []Tag                    `json:"tags,omitempty" meddler:"tags"`
+	Visibility   visibility.Visiblity     `json:"-" meddler:"visibility"`
+	Points       *int                     `json:"point,omitempty" meddler:"points"`
+	Comments     *int                     `json:"comments,omitempty" meddler:"comments"`
+	Channels     []uuid.UUID              `json:"channels,omitempty" meddler:"-"`
+	CreatedAt    time.Time                `json:"created_at" meddler:"created_at"`
+	UpdatedAt    *time.Time               `json:"updated_at,omitempty" meddler:"updated_at"`
+	DeletedAt    *time.Time               `json:"deleted_at,omitempty" meddler:"deleted_at"`
+}
+
+func (i *Item) buildHash() uuid.UUID {
+	h := sha256.New()
+	h.Write([]byte(i.ServiceName))
+	h.Write([]byte(i.ItemID))
+
+	return uuid.UUID(h.Sum(nil))
 }
