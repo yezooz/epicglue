@@ -1,5 +1,7 @@
 package store_db
 
+import "github.com/yezooz/epicglue/workers/model"
+
 // TODO: This generic_model clearly doesn't work. DB and Redis hold different functions but are both for storage.
 
 type DBStore interface {

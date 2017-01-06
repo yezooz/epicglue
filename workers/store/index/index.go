@@ -1,5 +1,7 @@
 package store_index
 
+import "github.com/yezooz/epicglue/workers/model"
+
 type IndexStore interface {
 	IndexItem(*worker_model.Task) error
 	UpdateItem(*worker_model.Task) error

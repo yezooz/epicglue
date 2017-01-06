@@ -3,6 +3,7 @@ package store_redis_db
 import (
 	"github.com/yezooz/epicglue/app/connection/key_value_store"
 	"github.com/yezooz/epicglue/app/connection/key_value_store/redis"
+	"github.com/yezooz/epicglue/workers/model"
 )
 
 type RedisStore struct {

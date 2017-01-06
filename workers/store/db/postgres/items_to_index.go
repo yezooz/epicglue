@@ -5,6 +5,7 @@ import (
 	"github.com/Sirupsen/logrus"
 	"github.com/yezooz/epicglue/app/model"
 	"github.com/yezooz/epicglue/app/worker/model"
+	"github.com/yezooz/epicglue/workers/model"
 	"runtime/debug"
 )
 

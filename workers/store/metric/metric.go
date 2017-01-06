@@ -1,5 +1,7 @@
 package store_metric
 
+import "github.com/yezooz/epicglue/workers/model"
+
 type MetricStore interface {
 	Indexed(*worker_model.Task)
 	Deleted(*worker_model.Task)

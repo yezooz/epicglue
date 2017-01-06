@@ -1,5 +1,7 @@
 package store_index_elasticsearch
 
+import "github.com/yezooz/epicglue/workers/model"
+
 func (inx ElasticsearchStore) UpdateItem(task *worker_model.Task) error {
 	switch task.TaskType {
 	case worker_model.TaskTypeRead:

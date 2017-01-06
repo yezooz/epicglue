@@ -4,6 +4,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/yezooz/epicglue/app/connection/database/postgres"
 	"github.com/yezooz/epicglue/app/helpers"
+	"github.com/yezooz/epicglue/workers/model"
 )
 
 var log = helpers.GetLogger("worker_store")

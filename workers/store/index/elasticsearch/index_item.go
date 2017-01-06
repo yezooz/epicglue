@@ -2,6 +2,7 @@ package store_index_elasticsearch
 
 import (
 	"fmt"
+	"github.com/yezooz/epicglue/workers/model"
 )
 
 func (inx ElasticsearchStore) IndexItem(task *worker_model.Task) error {
