@@ -33,7 +33,7 @@ var apiCmd = cli.Command{
 }
 
 func api(c *cli.Context) error {
-	var log *zap.Logger = &zap.New(
+	var log zap.Logger = zap.New(
 		zap.NewTextEncoder(),
 		zap.DebugLevel,
 	)
@@ -55,13 +55,14 @@ func api(c *cli.Context) error {
 	handler := router.Load(
 		ginzap.Ginzap(log, time.RFC3339, true),
 		middleware.Version,
-		middleware.Cache(c),
-		middleware.Store(c),
+		//middleware.Cache(c),
+		//middleware.Store(c),
 	)
 
 	// start the server without tls enabled
 	return http.ListenAndServe(
-		c.String("server-addr"),
+		"127.0.0.1:8000",
+		//c.String("server-addr"),
 		handler,
 	)
 }
