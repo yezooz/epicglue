@@ -3,15 +3,26 @@ package token
 import (
 	"time"
 
+	"github.com/drone/drone/remote"
+	"github.com/drone/drone/router/middleware/session"
+	"github.com/drone/drone/store"
+
 	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
-	"github.com/yezooz/epicglue/api/router/middleware/session"
-	"github.com/yezooz/epicglue/api/store"
 )
 
 func Refresh(c *gin.Context) {
 	user := session.User(c)
 	if user == nil {
+		c.Next()
+		return
+	}
+
+	// check if the remote includes the ability to
+	// refresh the user token.
+	remote_ := remote.FromContext(c)
+	refresher, ok := remote_.(remote.Refresher)
+	if !ok {
 		c.Next()
 		return
 	}
