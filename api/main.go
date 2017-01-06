@@ -56,7 +56,7 @@ func api(c *cli.Context) error {
 		ginzap.Ginzap(log, time.RFC3339, true),
 		middleware.Version,
 		//middleware.Cache(c),
-		//middleware.Store(c),
+		middleware.Store(c),
 	)
 
 	// start the server without tls enabled
