@@ -7,9 +7,13 @@ import (
 
 	"github.com/russross/meddler"
 
+	"github.com/rubenv/sql-migrate"
+	"github.com/uber-go/zap"
 	"github.com/yezooz/epicglue/api/store"
 	"github.com/yezooz/epicglue/api/store/datastore/ddl"
 )
+
+var log = zap.New(zap.NewTextEncoder())
 
 // datastore is an implementation of a model.Store built on top
 // of the sql/database driver with a relational database backend.
@@ -35,8 +39,8 @@ func From(db *sql.DB) store.Store {
 func open(driver, config string) *sql.DB {
 	db, err := sql.Open(driver, config)
 	if err != nil {
-		logrus.Errorln(err)
-		logrus.Fatalln("database connection failed")
+		log.Error(err.Error())
+		log.Fatal("database connection failed")
 	}
 	if driver == "mysql" {
 		// per issue https://github.com/go-sql-driver/mysql/issues/257
@@ -46,13 +50,13 @@ func open(driver, config string) *sql.DB {
 	setupMeddler(driver)
 
 	if err := pingDatabase(db); err != nil {
-		logrus.Errorln(err)
-		logrus.Fatalln("database ping attempts failed")
+		log.Error(err.Error())
+		log.Fatal("database ping attempts failed")
 	}
 
 	if err := setupDatabase(driver, db); err != nil {
-		logrus.Errorln(err)
-		logrus.Fatalln("migration failed")
+		log.Error(err.Error())
+		log.Fatal("migration failed")
 	}
 	cleanupDatabase(db)
 	return db
@@ -82,7 +86,7 @@ func pingDatabase(db *sql.DB) (err error) {
 		if err == nil {
 			return
 		}
-		logrus.Infof("database ping failed. retry in 1s")
+		log.Info("database ping failed. retry in 1s")
 		time.Sleep(time.Second)
 	}
 	return
@@ -103,8 +107,8 @@ func setupDatabase(driver string, db *sql.DB) error {
 // helper function to avoid stuck jobs when Drone unexpectedly
 // restarts. This is a temp fix for https://github.com/drone/drone/issues/1195
 func cleanupDatabase(db *sql.DB) {
-	db.Exec("update builds set build_status = 'error' where build_status IN ('pending','running')")
-	db.Exec("update jobs set job_status = 'error' where job_status IN ('pending','running')")
+	//db.Exec("update builds set build_status = 'error' where build_status IN ('pending','running')")
+	//db.Exec("update jobs set job_status = 'error' where job_status IN ('pending','running')")
 }
 
 // helper function to setup the meddler default driver

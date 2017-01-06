@@ -38,28 +38,29 @@ type Location struct {
 }
 
 type Item struct {
-	ID           uuid.UUID                `json:"id" meddler:"id,pk"`
-	ItemID       uuid.UUID                `json:"item_id" meddler:"item_id"`
-	ItemType     item_type.ItemType       `json:"item_type" meddler:"item_type"`
-	MediaType    media_type.MediaType     `json:"media_type" meddler:"media_type"`
-	ServiceName  service_name.ServiceName `json:"service" meddler:"service"`
-	Title        string                   `json:"title,omitempty" meddler:"title,zeroisnull"`
-	Description  string                   `json:"description,omitempty" meddler:"description,zeroisnull"`
-	Author       string                   `json:"author" meddler:"author"`
-	AuthorMedia  *Media                   `json:"author_media" meddler:"author_media"`
-	Media        []*Media                 `json:"media,omitempty" meddler:"media"`
-	Location     *Location                `json:"location,omitempty" meddler:"location"`
-	DefaultLink  string                   `json:"default" meddler:"link_default"`
-	InternalLink *string                  `json:"internal,default,omitempty" meddler:"link_internal"`
-	ExternalLink *string                  `json:"external,default,omitempty" meddler:"link_external"`
-	Tags         []Tag                    `json:"tags,omitempty" meddler:"tags"`
-	Visibility   visibility.Visiblity     `json:"-" meddler:"visibility"`
-	Points       *int                     `json:"point,omitempty" meddler:"points"`
-	Comments     *int                     `json:"comments,omitempty" meddler:"comments"`
-	Channels     []uuid.UUID              `json:"channels,omitempty" meddler:"-"`
-	CreatedAt    time.Time                `json:"created_at" meddler:"created_at"`
-	UpdatedAt    *time.Time               `json:"updated_at,omitempty" meddler:"updated_at"`
-	DeletedAt    *time.Time               `json:"deleted_at,omitempty" meddler:"deleted_at"`
+	ID          uuid.UUID                `json:"id" meddler:"id,pk"`
+	ItemID      uuid.UUID                `json:"item_id" meddler:"item_id"`
+	ItemType    item_type.ItemType       `json:"item_type" meddler:"item_type"`
+	MediaType   media_type.MediaType     `json:"media_type" meddler:"media_type"`
+	ServiceName service_name.ServiceName `json:"service" meddler:"service_name"`
+	Title       string                   `json:"title,omitempty" meddler:"title,zeroisnull"`
+	Description string                   `json:"description,omitempty" meddler:"description,zeroisnull"`
+	Author      string                   `json:"author" meddler:"author"`
+	AuthorMedia *Media                   `json:"author_media" meddler:"author_media,json"`
+	Media       []*Media                 `json:"media,omitempty" meddler:"media,json"`
+	//Location     string                `json:"location,omitempty" meddler:"location,point"`
+	//LocationName string                `json:"location_name,omitempty" meddler:"location_name"`
+	DefaultLink  string               `json:"default" meddler:"link"`
+	InternalLink string               `json:"internal,default,omitempty" meddler:"link_int"`
+	ExternalLink string               `json:"external,default,omitempty" meddler:"link_ext"`
+	Tags         []Tag                `json:"tags,omitempty" meddler:"tags"`
+	Visibility   visibility.Visiblity `json:"-" meddler:"visibility"`
+	Points       *int                 `json:"point,omitempty" meddler:"points"`
+	Comments     *int                 `json:"comments,omitempty" meddler:"comments"`
+	Channels     []uuid.UUID          `json:"channels,omitempty" meddler:"channels"`
+	CreatedAt    time.Time            `json:"created_at" meddler:"created_at"`
+	UpdatedAt    time.Time            `json:"updated_at,omitempty" meddler:"updated_at,zeroisnull"`
+	DeletedAt    time.Time            `json:"deleted_at,omitempty" meddler:"deleted_at,zeroisnull"`
 }
 
 func (i *Item) buildHash() uuid.UUID {
