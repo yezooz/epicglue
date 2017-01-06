@@ -9,6 +9,7 @@ import (
 	"github.com/yezooz/epicglue/model"
 	"github.com/yezooz/meddler"
 	"testing"
+	"time"
 )
 
 var log = zap.New(zap.NewTextEncoder())
@@ -24,10 +25,13 @@ func TestBasicInsert(t *testing.T) {
 	db := setupStore()
 
 	i := model.Item{
-		ID: uuid.NewV4(),
+		ID:        uuid.NewV4(),
+		CreatedAt: time.Now(),
 	}
 
 	err := meddler.Insert(db, "item", &i)
 
-	fmt.Println(err.Error())
+	if err != nil {
+		fmt.Println(err.Error())
+	}
 }
