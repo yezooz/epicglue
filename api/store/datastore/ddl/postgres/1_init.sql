@@ -28,4 +28,4 @@ CREATE TABLE item (
 
 -- +migrate Down
 
-DROP TABLE item;
+DROP TABLE item_x;

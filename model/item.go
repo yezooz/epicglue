@@ -1,17 +1,9 @@
 package model
 
 import (
-	"crypto/sha256"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/satori/go.uuid"
-	"github.com/yezooz/epicglue/model/enum/item_type"
-	"github.com/yezooz/epicglue/model/enum/media_type"
-	"github.com/yezooz/epicglue/model/enum/service"
-	"github.com/yezooz/epicglue/model/enum/visibility"
-	"time"
 )
-
-type Tag string
 
 type Items []Item
 
@@ -31,42 +23,40 @@ type Medium struct {
 	Preview  *Medium `json:"preview,omitempty" meddler:"preview"`
 }
 
-type Location struct {
-	Name *string  `json:"name,omitempty" meddler:"name"`
-	Lat  *float64 `json:"lat,omitempty" meddler:"lat"`
-	Lon  *float64 `json:"lon,omitempty" meddler:"lon"`
-}
-
 type Item struct {
-	ID          uuid.UUID                `json:"id" meddler:"id,pk"`
-	ItemID      uuid.UUID                `json:"item_id" meddler:"item_id"`
-	ItemType    item_type.ItemType       `json:"item_type" meddler:"item_type"`
-	MediaType   media_type.MediaType     `json:"media_type" meddler:"media_type"`
-	ServiceName service_name.ServiceName `json:"service" meddler:"service_name"`
-	Title       string                   `json:"title,omitempty" meddler:"title,zeroisnull"`
-	Description string                   `json:"description,omitempty" meddler:"description,zeroisnull"`
-	Author      string                   `json:"author" meddler:"author"`
-	AuthorMedia *Media                   `json:"author_media" meddler:"author_media,json"`
-	Media       []*Media                 `json:"media,omitempty" meddler:"media,json"`
-	//Location     string                `json:"location,omitempty" meddler:"location,point"`
+	ID uuid.UUID `json:"id" meddler:"id"`
+	//ItemID      uuid.UUID                `json:"item_id" meddler:"item_id"`
+	//ItemType    string       `json:"item_type" meddler:"item_type"`
+	//MediaType   string     `json:"media_type" meddler:"media_type"`
+	//ServiceName string `json:"service" meddler:"service_name"`
+	//Title       string                   `json:"title,omitempty" meddler:"title,zeroisnull"`
+	//Description string                   `json:"description,omitempty" meddler:"description,zeroisnull"`
+	//Author      string                   `json:"author" meddler:"author"`
+	//AuthorMedia *Media                   `json:"author_media" meddler:"author_media,json"`
+	//Media       []*Media                 `json:"media,omitempty" meddler:"media,json"`
+	//Location     string                `json:"location,omitempty" meddler:"location"`
 	//LocationName string                `json:"location_name,omitempty" meddler:"location_name"`
-	DefaultLink  string               `json:"default" meddler:"link"`
-	InternalLink string               `json:"internal,default,omitempty" meddler:"link_int"`
-	ExternalLink string               `json:"external,default,omitempty" meddler:"link_ext"`
-	Tags         []Tag                `json:"tags,omitempty" meddler:"tags"`
-	Visibility   visibility.Visiblity `json:"-" meddler:"visibility"`
-	Points       *int                 `json:"point,omitempty" meddler:"points"`
-	Comments     *int                 `json:"comments,omitempty" meddler:"comments"`
-	Channels     []uuid.UUID          `json:"channels,omitempty" meddler:"channels"`
-	CreatedAt    time.Time            `json:"created_at" meddler:"created_at"`
-	UpdatedAt    time.Time            `json:"updated_at,omitempty" meddler:"updated_at,zeroisnull"`
-	DeletedAt    time.Time            `json:"deleted_at,omitempty" meddler:"deleted_at,zeroisnull"`
+	//DefaultLink  string               `json:"default" meddler:"link"`
+	//InternalLink string               `json:"internal,default,omitempty" meddler:"link_int"`
+	//ExternalLink string               `json:"external,default,omitempty" meddler:"link_ext"`
+	//Tags         []string                `json:"tags,omitempty" meddler:"tags,json"`
+	//Visibility   string `json:"-" meddler:"visibility"`
+	//Points       *int                 `json:"point,omitempty" meddler:"points"`
+	//Comments     *int                 `json:"comments,omitempty" meddler:"comments"`
+	//Channels     []uuid.UUID          `json:"channels,omitempty" meddler:"channels,json"`
+	//CreatedAt    time.Time            `json:"created_at" meddler:"created_at"`
+	//UpdatedAt    *time.Time            `json:"updated_at,omitempty" meddler:"updated_at"`
+	//DeletedAt    *time.Time            `json:"deleted_at,omitempty" meddler:"deleted_at"`
 }
 
-func (i *Item) buildHash() uuid.UUID {
-	h := sha256.New()
-	h.Write([]byte(i.ServiceName))
-	h.Write([]byte(i.ItemID))
-
-	return uuid.UUID(h.Sum(nil))
-}
+//func (i *Item) buildHash() uuid.UUID {
+//	h := sha256.New()
+//	h.Write([]byte(i.ServiceName))
+//	h.Write(i.ItemID.Bytes())
+//
+//	id, err := uuid.FromBytes(h.Sum(nil))
+//	if err != nil {
+//		panic("Failed to create hash")
+//	}
+//	return id
+//}

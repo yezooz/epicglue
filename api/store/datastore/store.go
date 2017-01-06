@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/russross/meddler"
+	"github.com/yezooz/meddler"
 
 	"github.com/rubenv/sql-migrate"
 	"github.com/uber-go/zap"
