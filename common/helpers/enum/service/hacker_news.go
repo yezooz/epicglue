@@ -1,6 +1,6 @@
 package service
 
-import "github.com/yezooz/epicglue/importers/common/model"
+import "github.com/yezooz/epicglue/model"
 
 func NewHackerNewsService() *model.Service {
 	return &model.Service{

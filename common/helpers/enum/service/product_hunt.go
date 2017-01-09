@@ -1,6 +1,6 @@
 package service
 
-import "github.com/yezooz/common-cli/model"
+import "github.com/yezooz/epicglue/model"
 
 func NewProductHuntService() *model.Service {
 	return &model.Service{
